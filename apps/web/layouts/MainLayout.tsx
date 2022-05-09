@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Box, Drawer, DrawerContent, useColorModeValue, useDisclosure } from '@chakra-ui/react'
 import Sidebar from '../components/Navbars/Sidebar'
 import MobileNavbar from '../components/Navbars/MobileNavbar'
+import DisplacementSphere from '../components/background/DisplacementSphere'
 
 interface MainLayoutProps {
   children: React.ReactNode
@@ -9,9 +10,14 @@ interface MainLayoutProps {
 
 const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   const { isOpen, onOpen, onClose } = useDisclosure()
+  const [hasMounted, setHasMounted] = useState(false)
+
+  useEffect(() => {
+    setHasMounted(true)
+  }, [])
   return (
     <Box flex={1} bg={useColorModeValue('gray.100', 'gray.900')}>
-      <Box minH={{ base: 'calc(100vh - 50px)', md: 'calc(100vh - 25px)' }}>
+      <Box minH={{ base: 'calc(100vh - 50px)', md: 'calc(100vh - 25px)' }} position="relative">
         <Sidebar onClose={() => onClose} display={{ base: 'none', md: 'block' }} />
         <Drawer
           autoFocus={false}
@@ -27,8 +33,8 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
           </DrawerContent>
         </Drawer>
         <MobileNavbar onOpen={onOpen} />
-        <Box ml={{ base: 0, md: 60 }} p="4">
-          {children}
+        <Box ml={{ base: 0, md: 60 }}>
+          {hasMounted && <DisplacementSphere />} {children}
         </Box>
       </Box>
       <Box

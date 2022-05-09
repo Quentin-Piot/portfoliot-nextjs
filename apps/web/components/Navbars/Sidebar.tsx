@@ -11,10 +11,10 @@ export interface LinkItemProps {
 
 const LinkItems: Array<LinkItemProps> = [
   { name: 'Home', icon: FiHome },
-  { name: 'Trending', icon: FiTrendingUp },
-  { name: 'Explore', icon: FiCompass },
-  { name: 'Favourites', icon: FiStar },
-  { name: 'Settings', icon: FiSettings },
+  { name: 'Experience', icon: FiTrendingUp },
+  { name: 'Projects', icon: FiCompass },
+  { name: 'Education', icon: FiStar },
+  { name: 'About', icon: FiSettings },
 ]
 
 interface SidebarProps extends BoxProps {

@@ -69,7 +69,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.12.13, @babel/runtime@npm:^7.13.10, @babel/runtime@npm:^7.16.3, @babel/runtime@npm:^7.7.2":
+"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.12.13, @babel/runtime@npm:^7.13.10, @babel/runtime@npm:^7.16.3, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.7.2, @babel/runtime@npm:^7.8.7":
   version: 7.17.9
   resolution: "@babel/runtime@npm:7.17.9"
   dependencies:
@@ -1248,6 +1248,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@popmotion/easing@npm:^1.0.1":
+  version: 1.0.2
+  resolution: "@popmotion/easing@npm:1.0.2"
+  checksum: 5825b083c9a4cc449809c876e0c9a4f7c7fc6f19bc62e20be9881c09e16ad6158c445c09a282870f9b8140e55167161f26cd366b8897201e1dbaee3b5abc4a0d
+  languageName: node
+  linkType: hard
+
+"@popmotion/popcorn@npm:^0.4.4":
+  version: 0.4.4
+  resolution: "@popmotion/popcorn@npm:0.4.4"
+  dependencies:
+    "@popmotion/easing": ^1.0.1
+    framesync: ^4.0.1
+    hey-listen: ^1.0.8
+    style-value-types: ^3.1.7
+    tslib: ^1.10.0
+  checksum: 70e433763ba5328dc9f82d26bf245ff965f6de0fd931fe15452e855a53b620dd90d45139234a5e0bfa8d3498a3f762bdd75c1e29f56705323571785ee526ea5e
+  languageName: node
+  linkType: hard
+
 "@popperjs/core@npm:^2.9.3":
   version: 2.11.5
   resolution: "@popperjs/core@npm:2.11.5"
@@ -1371,6 +1391,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/react-transition-group@npm:^4":
+  version: 4.4.4
+  resolution: "@types/react-transition-group@npm:4.4.4"
+  dependencies:
+    "@types/react": "*"
+  checksum: 86e9ff9731798e12bc2afe0304678918769633b531dcf6397f86af81718fb7930ef8648e894eeb3718fc6eab6eb885cfb9b82a44d1d74e10951ee11ebc4643ae
+  languageName: node
+  linkType: hard
+
 "@types/react@npm:*, @types/react@npm:18.0.9":
   version: 18.0.9
   resolution: "@types/react@npm:18.0.9"
@@ -1386,6 +1415,13 @@ __metadata:
   version: 0.16.2
   resolution: "@types/scheduler@npm:0.16.2"
   checksum: b6b4dcfeae6deba2e06a70941860fb1435730576d3689225a421280b7742318d1548b3d22c1f66ab68e414f346a9542f29240bc955b6332c5b11e561077583bc
+  languageName: node
+  linkType: hard
+
+"@types/three@npm:^0.140.0":
+  version: 0.140.0
+  resolution: "@types/three@npm:0.140.0"
+  checksum: 05693787002f0e879e76a09cfd474d4fd100779f00c048e380d146783adaff539846988625b0f9117451bf2790637a236c68111f7f3e160f5227373a037381ba
   languageName: node
   linkType: hard
 
@@ -1947,6 +1983,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"dom-helpers@npm:^5.0.1":
+  version: 5.2.1
+  resolution: "dom-helpers@npm:5.2.1"
+  dependencies:
+    "@babel/runtime": ^7.8.7
+    csstype: ^3.0.2
+  checksum: 863ba9e086f7093df3376b43e74ce4422571d404fc9828bf2c56140963d5edf0e56160f9b2f3bb61b282c07f8fc8134f023c98fd684bddcb12daf7b0f14d951c
+  languageName: node
+  linkType: hard
+
 "emoji-regex@npm:^9.2.2":
   version: 9.2.2
   resolution: "emoji-regex@npm:9.2.2"
@@ -2458,6 +2504,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"framesync@npm:^4.0.0, framesync@npm:^4.0.1":
+  version: 4.1.0
+  resolution: "framesync@npm:4.1.0"
+  dependencies:
+    hey-listen: ^1.0.5
+  checksum: 3caaddc32d3c8c4a5b0eacfb82d74aa63fc690765274ebbb8622555879aa713b36e8a557a917de4ae24d5f49e38f9c79459327493b071cec15a1fdea96601cea
+  languageName: node
+  linkType: hard
+
 "fs.realpath@npm:^1.0.0":
   version: 1.0.0
   resolution: "fs.realpath@npm:1.0.0"
@@ -2650,7 +2705,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hey-listen@npm:^1.0.8":
+"hey-listen@npm:^1.0.5, hey-listen@npm:^1.0.8":
   version: 1.0.8
   resolution: "hey-listen@npm:1.0.8"
   checksum: 6bad60b367688f5348e25e7ca3276a74b59ac5a09b0455e6ff8ab7d4a9e38cd2116c708a7dcd8a954d27253ce1d8717ec891d175723ea739885b828cf44e4072
@@ -2724,6 +2779,13 @@ __metadata:
   dependencies:
     loose-envify: ^1.0.0
   checksum: cc3182d793aad82a8d1f0af697b462939cb46066ec48bbf1707c150ad5fad6406137e91a262022c269702e01621f35ef60269f6c0d7fd178487959809acdfb14
+  languageName: node
+  linkType: hard
+
+"ios-inner-height@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "ios-inner-height@npm:1.1.1"
+  checksum: c9d6223abc0eff8251c0fedd1a4153873547b960d0bd58c032b9370f5726b3963663eac620ab9556d4ee63adb9f7dc8d32a1333d3a969cf4524bd4a9709a0ed8
   languageName: node
   linkType: hard
 
@@ -3347,6 +3409,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"popmotion@npm:^8.7.3":
+  version: 8.7.6
+  resolution: "popmotion@npm:8.7.6"
+  dependencies:
+    "@popmotion/easing": ^1.0.1
+    "@popmotion/popcorn": ^0.4.4
+    framesync: ^4.0.0
+    hey-listen: ^1.0.5
+    style-value-types: ^3.1.7
+    stylefire: ^7.0.1
+    tslib: ^1.10.0
+  checksum: 47706065816e316d375665bf4d88ef41d42adfec53da6b746296a696e0937602f996c0b54cff78ba5a2869e7d0124d58fcddd5c6a97ee80e2f32a8feead95e5c
+  languageName: node
+  linkType: hard
+
 "portfolio-quentin-piot@workspace:.":
   version: 0.0.0-use.local
   resolution: "portfolio-quentin-piot@workspace:."
@@ -3419,15 +3496,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:18.1.0":
-  version: 18.1.0
-  resolution: "react-dom@npm:18.1.0"
+"react-dom@npm:17.0.2":
+  version: 17.0.2
+  resolution: "react-dom@npm:17.0.2"
   dependencies:
     loose-envify: ^1.1.0
-    scheduler: ^0.22.0
+    object-assign: ^4.1.1
+    scheduler: ^0.20.2
   peerDependencies:
-    react: ^18.1.0
-  checksum: bb0d48eeb0b297c79c2a03978baa29f5b3ff7ba3d070b21e34c9af1a6e7fdf0ca8b8d73e41f9214d91ad40eeb6d1f3559f884cbbc338713374a51320637c23df
+    react: 17.0.2
+  checksum: 1c1eaa3bca7c7228d24b70932e3d7c99e70d1d04e13bb0843bbf321582bc25d7961d6b8a6978a58a598af2af496d1cedcfb1bf65f6b0960a0a8161cb8dab743c
   languageName: node
   linkType: hard
 
@@ -3522,12 +3600,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:18.1.0":
-  version: 18.1.0
-  resolution: "react@npm:18.1.0"
+"react-transition-group@npm:^4.4.2":
+  version: 4.4.2
+  resolution: "react-transition-group@npm:4.4.2"
+  dependencies:
+    "@babel/runtime": ^7.5.5
+    dom-helpers: ^5.0.1
+    loose-envify: ^1.4.0
+    prop-types: ^15.6.2
+  peerDependencies:
+    react: ">=16.6.0"
+    react-dom: ">=16.6.0"
+  checksum: b67bf5b3e86dbab72d658b9a52a3589e5960583ab28c7c66272427d8fe30d4c7de422d5046ae96bd2683cdf80cc3264b2516f5ce80cae1dbe6cf3ca6dda392c5
+  languageName: node
+  linkType: hard
+
+"react@npm:17.0.2":
+  version: 17.0.2
+  resolution: "react@npm:17.0.2"
   dependencies:
     loose-envify: ^1.1.0
-  checksum: 5bb296b561b43ef2220395da4faac86c14a087c8c80e1a7598a5740f01ee605c11eaf249985c1e2000971c4cd32ccb46d40f00479bbd9fb6b1c7cf857393b7d4
+    object-assign: ^4.1.1
+  checksum: b254cc17ce3011788330f7bbf383ab653c6848902d7936a87b09d835d091e3f295f7e9dd1597c6daac5dc80f90e778c8230218ba8ad599f74adcc11e33b9d61b
   languageName: node
   linkType: hard
 
@@ -3643,12 +3737,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"scheduler@npm:^0.22.0":
-  version: 0.22.0
-  resolution: "scheduler@npm:0.22.0"
+"scheduler@npm:^0.20.2":
+  version: 0.20.2
+  resolution: "scheduler@npm:0.20.2"
   dependencies:
     loose-envify: ^1.1.0
-  checksum: a8ef5cab769c020cd6382ad9ecc3f72dbde56a50a36639b3a42ad9c11f7724f03700bcad373044059b8067d4a6365154dc7c0ca8027ef20ff4900cf58a0fc2c5
+    object-assign: ^4.1.1
+  checksum: c4b35cf967c8f0d3e65753252d0f260271f81a81e427241295c5a7b783abf4ea9e905f22f815ab66676f5313be0a25f47be582254db8f9241b259213e999b8fc
   languageName: node
   linkType: hard
 
@@ -3791,6 +3886,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"style-value-types@npm:^3.1.7":
+  version: 3.2.0
+  resolution: "style-value-types@npm:3.2.0"
+  dependencies:
+    hey-listen: ^1.0.8
+    tslib: ^1.10.0
+  checksum: 26cee764836641e4423572a9f559ef22ac0f7759c3defc5514bb0c6376047839d70dcb9395819af461d15f50b0f9a1a518be1ffcc81b3cce7ca37d0c63a2c6c8
+  languageName: node
+  linkType: hard
+
 "styled-jsx@npm:5.0.2":
   version: 5.0.2
   resolution: "styled-jsx@npm:5.0.2"
@@ -3802,6 +3907,19 @@ __metadata:
     babel-plugin-macros:
       optional: true
   checksum: 86d55819ebeabd283a574d2f44f7d3f8fa6b8c28fa41687ece161bf1e910e04965611618921d8f5cd33dc6dae1033b926a70421ae5ea045440a9861edc3e0d87
+  languageName: node
+  linkType: hard
+
+"stylefire@npm:^7.0.1":
+  version: 7.0.3
+  resolution: "stylefire@npm:7.0.3"
+  dependencies:
+    "@popmotion/popcorn": ^0.4.4
+    framesync: ^4.0.0
+    hey-listen: ^1.0.8
+    style-value-types: ^3.1.7
+    tslib: ^1.10.0
+  checksum: 42d9e578188fb1f9a6e28d951567d5ad8ef1ee1d58d03a969cbe210d21c899ef5f66212e3c5daa172e2696c72d6e206a5a0dd6db94e69c7f309881658abf5736
   languageName: node
   linkType: hard
 
@@ -3841,6 +3959,13 @@ __metadata:
   version: 0.2.0
   resolution: "text-table@npm:0.2.0"
   checksum: b6937a38c80c7f84d9c11dd75e49d5c44f71d95e810a3250bd1f1797fc7117c57698204adf676b71497acc205d769d65c16ae8fa10afad832ae1322630aef10a
+  languageName: node
+  linkType: hard
+
+"three@npm:^0.125.0":
+  version: 0.125.2
+  resolution: "three@npm:0.125.2"
+  checksum: db032cdf29c24c2ba01b48f19e08a1e8ee2f5db06d02a3c7c5bf2c7989d6a80de2258438b72a1a41fd5b24d6dd8f98a585acd22a021bcf6763e585d97c189d54
   languageName: node
   linkType: hard
 
@@ -3886,7 +4011,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^1.0.0, tslib@npm:^1.8.1":
+"tslib@npm:^1.0.0, tslib@npm:^1.10.0, tslib@npm:^1.8.1":
   version: 1.14.1
   resolution: "tslib@npm:1.14.1"
   checksum: dbe628ef87f66691d5d2959b3e41b9ca0045c3ee3c7c7b906cc1e328b39f199bb1ad9e671c39025bd56122ac57dfbf7385a94843b1cc07c60a4db74795829acd
@@ -4166,16 +4291,22 @@ __metadata:
     "@types/node": 17.0.31
     "@types/react": 18.0.9
     "@types/react-dom": 18.0.3
+    "@types/react-transition-group": ^4
+    "@types/three": ^0.140.0
     "@typescript-eslint/eslint-plugin": ^5.22.0
     eslint: 8.15.0
     eslint-config-next: 12.1.6
     eslint-config-prettier: ^8.5.0
     framer-motion: ^6.3.3
+    ios-inner-height: ^1.1.1
     next: 12.1.6
+    popmotion: ^8.7.3
     prettier: ^2.6.2
-    react: 18.1.0
-    react-dom: 18.1.0
+    react: 17.0.2
+    react-dom: 17.0.2
     react-icons: ^4.3.1
+    react-transition-group: ^4.4.2
+    three: ^0.125.0
     typescript: 4.6.4
   languageName: unknown
   linkType: soft
