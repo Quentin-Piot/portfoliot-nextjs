@@ -2,6 +2,7 @@
   "name": "portfolio-quentin-piot",
   "private": true,
   "devDependencies": {
+    "@types/prettier": "^2",
     "turbo": "^1.1.9"
   },
   "workspaces": [
