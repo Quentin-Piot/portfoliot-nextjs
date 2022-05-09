@@ -7,7 +7,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>Quentin Piot Portfolio</title>
       </Head>
 
       <MainLayout>

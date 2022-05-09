@@ -10,8 +10,8 @@ interface MainLayoutProps {
 const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   const { isOpen, onOpen, onClose } = useDisclosure()
   return (
-    <Box flex={1} bg="red">
-      <Box minH="100vh" bg={useColorModeValue('gray.100', 'gray.900')}>
+    <Box flex={1} bg={useColorModeValue('gray.100', 'gray.900')}>
+      <Box minH={{ base: 'calc(100vh - 50px)', md: 'calc(100vh - 25px)' }}>
         <Sidebar onClose={() => onClose} display={{ base: 'none', md: 'block' }} />
         <Drawer
           autoFocus={false}
@@ -31,7 +31,15 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
           {children}
         </Box>
       </Box>
-      {children}
+      <Box
+        textAlign={{ base: 'center', md: 'right' }}
+        minH={{ base: '45px', md: '25px' }}
+        bg={useColorModeValue('grey.100', 'gray.800')}
+        color={useColorModeValue('grey.800', 'gray.100')}
+        pr={5}
+      >
+        Built using Typescript, React, Next.js,ChakraUI, turborepo, yarn workspaces, etc.
+      </Box>
     </Box>
   )
 }
