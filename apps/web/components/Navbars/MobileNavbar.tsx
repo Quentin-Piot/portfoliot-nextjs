@@ -1,22 +1,14 @@
 import React from 'react'
 import {
-  Avatar,
-  Box,
   Flex,
   FlexProps,
   HStack,
   IconButton,
-  Menu,
-  MenuButton,
-  MenuDivider,
-  MenuItem,
-  MenuList,
   Text,
   useColorMode,
   useColorModeValue,
-  VStack,
 } from '@chakra-ui/react'
-import { FiBell, FiChevronDown, FiMenu, FiMoon, FiSun } from 'react-icons/fi'
+import { FiMenu, FiMoon, FiSun } from 'react-icons/fi'
 
 interface MobileProps extends FlexProps {
   onOpen: () => void
