@@ -48,7 +48,7 @@ const MobileNavbar = ({ onOpen, ...rest }: MobileProps) => {
         fontFamily="monospace"
         fontWeight="bold"
       >
-        Logo
+        Quentin Piot
       </Text>
 
       <HStack spacing={{ base: '0', md: '6' }}>
