@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Box, Drawer, DrawerContent, useColorModeValue, useDisclosure } from '@chakra-ui/react'
-import Sidebar from '../components/Navbars/Sidebar'
-import MobileNavbar from '../components/Navbars/MobileNavbar'
+import Sidebar from '../components/navbars/Sidebar'
+import MobileNavbar from '../components/navbars/MobileNavbar'
 import DisplacementSphere from '../components/background/DisplacementSphere'
 
 interface MainLayoutProps {

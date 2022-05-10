@@ -2,9 +2,9 @@ import React from 'react'
 import {
   Flex,
   FlexProps,
+  Heading,
   HStack,
   IconButton,
-  Text,
   useColorMode,
   useColorModeValue,
 } from '@chakra-ui/react'
@@ -37,14 +37,14 @@ const MobileNavbar = ({ onOpen, ...rest }: MobileProps) => {
         icon={<FiMenu />}
       />
 
-      <Text
+      <Heading
         display={{ base: 'flex', md: 'none' }}
         fontSize="2xl"
         fontFamily="monospace"
         fontWeight="bold"
       >
         Quentin Piot
-      </Text>
+      </Heading>
 
       <HStack spacing={{ base: '0', md: '6' }}>
         <IconButton

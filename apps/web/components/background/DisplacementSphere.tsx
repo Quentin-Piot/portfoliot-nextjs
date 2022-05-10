@@ -22,7 +22,6 @@ import { useInViewport } from '../../hooks/useInViewport'
 import { reflow } from '../../utils/transition'
 import { media, rgbToThreeColor } from '../../utils/style'
 import { cleanRenderer, cleanScene, removeLights } from '../../utils/three'
-import styles from './DisplacementSphere.module.css'
 import { useColorMode } from '@chakra-ui/react'
 
 const DisplacementSphere = (props: any) => {
@@ -94,9 +93,9 @@ const DisplacementSphere = (props: any) => {
   }, [])
 
   useEffect(() => {
-    const dirLight = new DirectionalLight(rgbToThreeColor('240 240 240'), 0.6)
+    const dirLight = new DirectionalLight(rgbToThreeColor('240 240 210'), 0.6)
     const ambientLight = new AmbientLight(
-      rgbToThreeColor('200 200 200'),
+      rgbToThreeColor('200 200 250'),
       colorMode === 'light' ? 0.8 : 0.3
     )
 
@@ -197,7 +196,7 @@ const DisplacementSphere = (props: any) => {
         uniforms.current.time.value = 0.00005 * (Date.now() - start.current)
       }
 
-      sphere.current.rotation.z += 0.001
+      sphere.current.rotation.z += 0.002
       renderer.current.render(scene.current, camera.current)
     }
 
@@ -217,7 +216,6 @@ const DisplacementSphere = (props: any) => {
       {(status) => (
         <canvas
           aria-hidden
-          className={styles.displacementSphere}
           ref={canvasRef}
           color={'red'}
           {...props}
