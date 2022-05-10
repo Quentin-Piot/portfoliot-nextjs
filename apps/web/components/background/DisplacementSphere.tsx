@@ -115,7 +115,8 @@ const DisplacementSphere = (props: any) => {
   useEffect(() => {
     const handleResize = () => {
       const canvasHeight = window.innerHeight / 2
-      const windowWidth = window.innerWidth / 2
+      const windowWidth =
+        window.innerWidth <= media.mobile ? window.innerWidth : window.innerWidth / 2
       const fullHeight = canvasHeight + canvasHeight * 0.3
       canvasRef.current.style.height = fullHeight
       renderer.current.setSize(windowWidth, fullHeight)
@@ -127,10 +128,10 @@ const DisplacementSphere = (props: any) => {
         renderer.current.render(scene.current, camera.current)
       }
 
-      if (windowWidth <= media.mobile / 2) {
-        sphere.current.position.x = 10
+      if (window.innerWidth <= media.mobile) {
+        sphere.current.position.x = 30
         sphere.current.position.y = 30
-      } else if (windowWidth <= media.tablet / 2) {
+      } else if (window.innerWidth <= media.tablet) {
         sphere.current.position.x = 10
         sphere.current.position.y = 30
       } else {

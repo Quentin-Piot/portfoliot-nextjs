@@ -1,7 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Homepage from '../views/Homepage'
-import MainLayout from '../layouts/MainLayout'
 
 const Home: NextPage = () => {
   return (
@@ -10,9 +9,7 @@ const Home: NextPage = () => {
         <title>Portfolio</title>
       </Head>
 
-      <MainLayout>
-        <Homepage />
-      </MainLayout>
+      <Homepage />
     </>
   )
 }
