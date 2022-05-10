@@ -6,7 +6,10 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta
+          name="google-site-verification"
+          content="fkukldKte3_7HBaHyBTWur7CHtBxeN-Btp-b1GujCsE"
+        />
         <meta
           name="description"
           content="Portfolio of Quentin Piot. French software Engineer based in Asia. Well-versed in a wide range of frontend technologies (React, Vue, Next.js, Redux) and backend technologies (Node.js/Nest.js/Hapi.js, Java/Spring, GraphQl, PostgresSQL)"
