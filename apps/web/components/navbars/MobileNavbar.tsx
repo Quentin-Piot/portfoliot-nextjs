@@ -10,11 +10,11 @@ import {
 } from '@chakra-ui/react'
 import { FiMenu, FiMoon, FiSun } from 'react-icons/fi'
 
-interface MobileProps extends FlexProps {
+interface IMobileProps extends FlexProps {
   onOpen: () => void
 }
 
-const MobileNavbar = ({ onOpen, ...rest }: MobileProps) => {
+const MobileNavbar = ({ onOpen, ...rest }: IMobileProps) => {
   const { colorMode, toggleColorMode } = useColorMode()
 
   return (

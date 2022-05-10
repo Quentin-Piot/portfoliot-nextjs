@@ -27,7 +27,6 @@ import { useColorMode } from '@chakra-ui/react'
 const DisplacementSphere = (props: any) => {
   const { colorMode } = useColorMode()
 
-  const rgbBackground = colorMode === 'light' ? '237 242 247' : '17 17 17'
   const width = useRef<any>(window.innerWidth)
   const height = useRef<any>(window.innerHeight)
   const start = useRef<any>(Date.now())
@@ -52,6 +51,7 @@ const DisplacementSphere = (props: any) => {
       renderer.current = new WebGLRenderer({
         canvas: canvasRef.current,
         powerPreference: 'high-performance',
+        alpha: true,
       })
       renderer.current.setSize(width.current, height.current)
       renderer.current.setPixelRatio(1)
@@ -93,29 +93,29 @@ const DisplacementSphere = (props: any) => {
   }, [])
 
   useEffect(() => {
-    const dirLight = new DirectionalLight(rgbToThreeColor('240 240 210'), 0.6)
+    const dirLight = new DirectionalLight(rgbToThreeColor('40 40 40'), 0.9)
     const ambientLight = new AmbientLight(
-      rgbToThreeColor('200 200 250'),
-      colorMode === 'light' ? 0.8 : 0.3
+      rgbToThreeColor('250 250 250'),
+      colorMode === 'light' ? 0.1 : 0.6
     )
 
-    dirLight.position.z = 200
+    dirLight.position.z = 100
     dirLight.position.x = 100
     dirLight.position.y = 100
 
     lights.current = [dirLight, ambientLight]
-    scene.current.background = rgbToThreeColor(rgbBackground)
+    scene.current.background = null
     lights.current.forEach((light: any) => scene.current.add(light))
 
     return () => {
       removeLights(lights.current)
     }
-  }, [rgbBackground, colorMode])
+  }, [colorMode])
 
   useEffect(() => {
     const handleResize = () => {
-      const canvasHeight = window.innerHeight
-      const windowWidth = window.innerWidth
+      const canvasHeight = window.innerHeight / 2
+      const windowWidth = window.innerWidth / 2
       const fullHeight = canvasHeight + canvasHeight * 0.3
       canvasRef.current.style.height = fullHeight
       renderer.current.setSize(windowWidth, fullHeight)
@@ -127,15 +127,15 @@ const DisplacementSphere = (props: any) => {
         renderer.current.render(scene.current, camera.current)
       }
 
-      if (windowWidth <= media.mobile) {
-        sphere.current.position.x = 14
-        sphere.current.position.y = 10
-      } else if (windowWidth <= media.tablet) {
-        sphere.current.position.x = 18
-        sphere.current.position.y = 14
+      if (windowWidth <= media.mobile / 2) {
+        sphere.current.position.x = 10
+        sphere.current.position.y = 30
+      } else if (windowWidth <= media.tablet / 2) {
+        sphere.current.position.x = 10
+        sphere.current.position.y = 30
       } else {
-        sphere.current.position.x = 22
-        sphere.current.position.y = 16
+        sphere.current.position.x = 20
+        sphere.current.position.y = 10
       }
     }
 
@@ -193,10 +193,12 @@ const DisplacementSphere = (props: any) => {
       animation = requestAnimationFrame(animate)
 
       if (uniforms.current !== undefined) {
-        uniforms.current.time.value = 0.00005 * (Date.now() - start.current)
+        uniforms.current.time.value = 0.00002 * (Date.now() - start.current)
       }
 
-      sphere.current.rotation.z += 0.002
+      sphere.current.rotation.z += 0.001
+      sphere.current.rotation.x += 0.001
+
       renderer.current.render(scene.current, camera.current)
     }
 
@@ -217,11 +219,11 @@ const DisplacementSphere = (props: any) => {
         <canvas
           aria-hidden
           ref={canvasRef}
-          color={'red'}
           {...props}
           style={{
-            opacity: status === 'entered' || status === 'entering' ? 1 : 0,
+            opacity: status === 'entered' || status === 'entering' ? 0.9 : 0,
             position: 'fixed',
+            right: 0,
             transitionDuration: 3,
             transitionProperty: 'opacity',
             transitionTimingFunction: 'cubic-bezier(0.4, 0.0, 0.2, 1)',

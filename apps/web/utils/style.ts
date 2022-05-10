@@ -1,4 +1,3 @@
-p
 /**
  * Media query breakpoints
  */

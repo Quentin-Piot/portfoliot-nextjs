@@ -1,6 +1,6 @@
 /* eslint-disable import/no-anonymous-default-export */
 export default `
-#define PHONG
+#define SphereFrag
 
 uniform vec3 diffuse;
 uniform vec3 emissive;
@@ -39,9 +39,9 @@ varying float noise;
 void main() {
   #include <clipping_planes_fragment>
 
-  vec3 color = vec3(vUv * (0.2 - 2.0 * noise), 1.0);
-  vec3 finalColors = vec3(color.b * 1.5, color.r, color.r);
-  vec4 diffuseColor = vec4(cos(finalColors * noise * 3.0), 1.0);
+  vec3 color = vec3(vUv * (0.2 - 2.6 * noise), 1.0);
+  vec3 finalColors = vec3(color.b * 1.01, color.r * 1.5, color.r * 1.2);
+  vec4 diffuseColor = vec4(cos(finalColors * noise * 1.0), 1.0);
   ReflectedLight reflectedLight = ReflectedLight(vec3(0.0), vec3(0.0), vec3(0.0), vec3(0.0));
   vec3 totalEmissiveRadiance = emissive;
 

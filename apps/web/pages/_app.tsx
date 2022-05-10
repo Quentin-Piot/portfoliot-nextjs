@@ -5,9 +5,28 @@ import { ChakraProvider, extendTheme } from '@chakra-ui/react'
 export const theme = extendTheme({
   initialColorMode: 'light',
   useSystemColorMode: false,
+  styles: {
+    global: {
+      // styles for the `a`
+      a: {
+        _hover: {
+          bgColor: 'red',
+        },
+      },
+    },
+  },
   colors: {
     primary: '#ffffff',
     secondary: '#eeeeee',
+  },
+  components: {
+    Button: {
+      baseStyle: {
+        _hover: {
+          backgroundColor: 'red',
+        },
+      },
+    },
   },
 })
 
