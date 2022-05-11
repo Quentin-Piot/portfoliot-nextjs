@@ -3445,15 +3445,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"portfolio-quentin-piot@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "portfolio-quentin-piot@workspace:."
-  dependencies:
-    "@types/prettier": ^2
-    turbo: ^1.1.9
-  languageName: unknown
-  linkType: soft
-
 "postcss@npm:8.4.5":
   version: 8.4.5
   resolution: "postcss@npm:8.4.5"
@@ -3498,6 +3489,15 @@ __metadata:
   checksum: 823bf443c6dd14f669984dea25757b37993f67e8d94698996064035edd43bed8a5a17a9f12e439c2b35df1078c6bec05a6c86e336209eb1061e8025c481168e8
   languageName: node
   linkType: hard
+
+"quentin-piot@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "quentin-piot@workspace:."
+  dependencies:
+    "@types/prettier": ^2
+    turbo: ^1.1.9
+  languageName: unknown
+  linkType: soft
 
 "queue-microtask@npm:^1.2.2":
   version: 1.2.3
