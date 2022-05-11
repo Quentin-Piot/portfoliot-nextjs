@@ -2,6 +2,7 @@ import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { ChakraProvider, extendTheme } from '@chakra-ui/react'
 import MainLayout from '../layouts/MainLayout'
+import 'utils/translation/translation'
 
 export const theme = extendTheme({
   initialColorMode: 'light',

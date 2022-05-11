@@ -1,0 +1,16 @@
+{
+  "common" : {
+
+  },
+  "components": {
+    "navbar" : {
+      "items" : {
+        "home": "Home",
+        "experience":"Experience",
+        "projects": "Projects",
+        "education":"Education",
+        "about": "About"
+      }
+    }
+  }
+}
