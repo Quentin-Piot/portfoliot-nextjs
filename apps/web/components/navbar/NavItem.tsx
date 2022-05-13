@@ -3,14 +3,14 @@ import { IconType } from 'react-icons'
 import React, { ReactText } from 'react'
 import Link from 'next/link'
 
-interface NavItemProps extends FlexProps {
+interface INavItemProps extends FlexProps {
   icon: IconType
   children: ReactText
   route: string
   active: boolean
 }
 
-const NavItem = ({ icon, children, route, active, ...rest }: NavItemProps) => {
+const NavItem = ({ icon, children, route, active, ...rest }: INavItemProps) => {
   const { colorMode } = useColorMode()
   const colors = {
     light: {

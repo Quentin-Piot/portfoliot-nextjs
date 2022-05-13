@@ -1,8 +1,8 @@
 .container {
   position: relative;
-  padding: 40px;
+  padding: 60px;
   height: calc(100vh - 110px) ;
-  overflow: hidden;
+  overflow: hidden;overflow-y: auto;
   background: linear-gradient(
       50deg,
       rgba(255, 255, 255, 0.8) 12%,
@@ -14,5 +14,6 @@
 @media only screen and (max-width: 1300px) {
   .container {
     height: calc(100vh - 150px) ;
+    padding: 20px;
   }
 }

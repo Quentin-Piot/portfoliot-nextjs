@@ -10,12 +10,13 @@ import {
 import Sidebar from '../components/navbar/Sidebar'
 import MobileNavbar from '../components/navbar/MobileNavbar'
 import styles from './MainLayout.module.css'
+import DisplacementSphere from 'components/background/DisplacementSphere'
 
-interface MainLayoutProps {
+interface IMainLayoutProps {
   children: React.ReactNode
 }
 
-const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
+const MainLayout: React.FC<IMainLayoutProps> = ({ children }) => {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const [hasMounted, setHasMounted] = useState(false)
 
@@ -41,7 +42,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
         </Drawer>
         <MobileNavbar onOpen={onOpen} />
         <Box ml={{ base: 0, md: 60 }} height="100%" position={'relative'} bgColor={'transparent'}>
-          {/*{hasMounted && <DisplacementSphere />}*/}
+          {hasMounted && <DisplacementSphere />}
 
           <div className={styles.container}>{children}</div>
         </Box>
