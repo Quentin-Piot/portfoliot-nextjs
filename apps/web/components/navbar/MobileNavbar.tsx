@@ -9,6 +9,7 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react'
 import { FiMenu, FiMoon, FiSun } from 'react-icons/fi'
+import LanguageSelector from 'components/navbar/LanguageSelector'
 
 interface IMobileProps extends FlexProps {
   onOpen: () => void
@@ -47,6 +48,7 @@ const MobileNavbar = ({ onOpen, ...rest }: IMobileProps) => {
       </Heading>
 
       <HStack spacing={{ base: '0', md: '6' }}>
+        <LanguageSelector />
         <IconButton
           aria-label="select color"
           onClick={toggleColorMode}

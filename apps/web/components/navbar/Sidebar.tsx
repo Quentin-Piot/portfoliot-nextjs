@@ -53,6 +53,7 @@ const Sidebar: React.FC<ISidebarProps> = ({ onClose, ...rest }) => {
           icon={link.icon}
           route={link.route}
           active={link.route === router.asPath}
+          suppressHydrationWarning
         >
           {link.name}
         </NavItem>
