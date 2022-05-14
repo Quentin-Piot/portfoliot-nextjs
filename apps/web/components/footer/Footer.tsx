@@ -79,7 +79,8 @@ const Footer: React.FC = () => {
           align={{ base: 'center', md: 'center' }}
         >
           <Text>
-            Built from scratch with React, Typescript, Next.js, Three.js, ChakraUI, Turborepo, etc.
+            Built from scratch with React, Typescript, Next.js, PWA, Three.js, ChakraUI, Turborepo,
+            etc.
           </Text>
           <Stack direction={'row'} spacing={6}>
             <SocialButton label={'LinkedIn'} href={'https://www.linkedin.com/in/quentin-piot/'}>
