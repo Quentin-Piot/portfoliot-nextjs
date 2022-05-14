@@ -18,31 +18,29 @@ const MainLayout: React.FC<IMainLayoutProps> = ({ children }) => {
     setHasMounted(true)
   }, [])
   return (
-    <Box flex={1} bg={useColorModeValue('gray.100', 'gray.900')}>
-      <Box minH={{ base: 'calc(100vh - 60px)', md: 'calc(100vh - 25px)' }} position="relative">
-        <Sidebar onClose={() => onClose} display={{ base: 'none', md: 'block' }} />
-        <Drawer
-          autoFocus={false}
-          isOpen={isOpen}
-          placement="left"
-          onClose={onClose}
-          returnFocusOnClose={false}
-          onOverlayClick={onClose}
-          size="full"
-        >
-          <DrawerContent>
-            <Sidebar onClose={onClose} />
-          </DrawerContent>
-        </Drawer>
-        <MobileNavbar onOpen={onOpen} />
-        <Box ml={{ base: 0, md: 60 }} height="100%" position={'relative'} bgColor={'transparent'}>
-          {hasMounted && <DisplacementSphere />}
+    <Box height="100vh" overflow="hidden" bg={useColorModeValue('gray.100', 'gray.900')}>
+      <Sidebar onClose={() => onClose} display={{ base: 'none', md: 'block' }} />
+      <Drawer
+        autoFocus={false}
+        isOpen={isOpen}
+        placement="left"
+        onClose={onClose}
+        returnFocusOnClose={false}
+        onOverlayClick={onClose}
+        size="full"
+      >
+        <DrawerContent>
+          <Sidebar onClose={onClose} />
+        </DrawerContent>
+      </Drawer>
+      <MobileNavbar onOpen={onOpen} />
+      <Box ml={{ base: 0, md: 60 }} height="100%" position={'relative'} bgColor={'transparent'}>
+        {hasMounted && <DisplacementSphere />}
 
-          <div className={styles.container}>
-            <div className={styles.innerContainer}>{children}</div>
-            <Footer />
-          </div>
-        </Box>
+        <div className={styles.container}>
+          <div className={styles.innerContainer}>{children}</div>
+          <Footer />
+        </div>
       </Box>
     </Box>
   )

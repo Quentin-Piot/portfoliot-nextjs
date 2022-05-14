@@ -52,7 +52,7 @@ const Footer: React.FC = () => {
     <Box
       bg={useColorModeValue('white', 'gray.900')}
       color={useColorModeValue('gray.700', 'gray.200')}
-      height={{ base: '280px', md: '180px' }}
+      height={{ base: '250px', md: '190px' }}
     >
       <Container as={Stack} maxW={'6xl'} py={4} spacing={4} justify={'center'} align={'center'}>
         <Image src="/logo.png" alt="logo" width={10} />
