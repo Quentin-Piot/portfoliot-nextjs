@@ -17,7 +17,7 @@ const Homepage: React.FC = () => {
           <BasicCard
             categorie={t('common.aboutMe')}
             subtitle={t('pages.homepage.cards.aboutMe.softwareEngineer')}
-            text={t('pages.homepage.cards.aboutMe.text')}
+            content={t('pages.homepage.cards.aboutMe.text')}
           />
         </Stack>
       </HStack>

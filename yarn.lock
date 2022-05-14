@@ -2760,6 +2760,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/react-vertical-timeline-component@npm:^3":
+  version: 3.3.3
+  resolution: "@types/react-vertical-timeline-component@npm:3.3.3"
+  dependencies:
+    "@types/react": "*"
+  checksum: 4c49c64c4fb507d0c981c7a3c8afb05edd7c3cf5e3f0f95db10b6dd1d24ffb93e5e87f358bd82819ac41d5a85377948c016ce63bb9d2838e0ff9c78919033eaf
+  languageName: node
+  linkType: hard
+
 "@types/react@npm:*, @types/react@npm:18.0.9":
   version: 18.0.9
   resolution: "@types/react@npm:18.0.9"
@@ -3393,6 +3402,13 @@ __metadata:
   version: 2.0.0
   resolution: "chownr@npm:2.0.0"
   checksum: c57cf9dd0791e2f18a5ee9c1a299ae6e801ff58fee96dc8bfd0dcb4738a6ce58dd252a3605b1c93c6418fe4f9d5093b28ffbf4d66648cb2a9c67eaef9679be2f
+  languageName: node
+  linkType: hard
+
+"classnames@npm:^2.2.6":
+  version: 2.3.1
+  resolution: "classnames@npm:2.3.1"
+  checksum: 14db8889d56c267a591f08b0834989fe542d47fac659af5a539e110cc4266694e8de86e4e3bbd271157dbd831361310a8293e0167141e80b0f03a0f175c80960
   languageName: node
   linkType: hard
 
@@ -6195,6 +6211,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-intersection-observer@npm:^8.26.2":
+  version: 8.34.0
+  resolution: "react-intersection-observer@npm:8.34.0"
+  peerDependencies:
+    react: ^15.0.0 || ^16.0.0 || ^17.0.0|| ^18.0.0
+  checksum: 7713fecfd1512c7f5a60f9f0bf15403b8f8bbd4110bcafaeaea6de36a0e0eb60368c3638f99e9c97b75ad8fc787ea48c241dcb5c694f821d7f2976f709082cc5
+  languageName: node
+  linkType: hard
+
 "react-is@npm:^16.13.1, react-is@npm:^16.7.0":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
@@ -6266,6 +6291,17 @@ __metadata:
     react: ">=16.6.0"
     react-dom: ">=16.6.0"
   checksum: b67bf5b3e86dbab72d658b9a52a3589e5960583ab28c7c66272427d8fe30d4c7de422d5046ae96bd2683cdf80cc3264b2516f5ce80cae1dbe6cf3ca6dda392c5
+  languageName: node
+  linkType: hard
+
+"react-vertical-timeline-component@npm:^3.5.2":
+  version: 3.5.2
+  resolution: "react-vertical-timeline-component@npm:3.5.2"
+  dependencies:
+    classnames: ^2.2.6
+    prop-types: ^15.7.2
+    react-intersection-observer: ^8.26.2
+  checksum: 004189057c37f6d97d2973b7fe87a361d0b6655d346f00445041e1839362122f66ca988302e9b93bf4fd2df23e9e1e84d421706249b20d325516ab0430c60e38
   languageName: node
   linkType: hard
 
@@ -7439,6 +7475,7 @@ __metadata:
     "@types/react": 18.0.9
     "@types/react-dom": 18.0.3
     "@types/react-transition-group": ^4
+    "@types/react-vertical-timeline-component": ^3
     "@types/three": ^0.140.0
     "@typescript-eslint/eslint-plugin": ^5.22.0
     eslint: 8.15.0
@@ -7458,6 +7495,7 @@ __metadata:
     react-i18next: ^11.16.9
     react-icons: ^4.3.1
     react-transition-group: ^4.4.2
+    react-vertical-timeline-component: ^3.5.2
     three: ^0.125.0
     typescript: 4.6.4
   languageName: unknown

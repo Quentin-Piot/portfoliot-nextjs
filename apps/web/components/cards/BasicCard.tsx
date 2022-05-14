@@ -4,12 +4,13 @@ import React from 'react'
 interface IBasicCardProps {
   categorie: string
   subtitle: string
-  text: string
+  content?: React.ReactNode
+  children?: React.ReactNode
 }
 
-const BasicCard: React.FC<IBasicCardProps> = ({ categorie, subtitle, text }) => {
+const BasicCard: React.FC<IBasicCardProps> = ({ children, categorie, subtitle, content }) => {
   return (
-    <Center py={6}>
+    <Center>
       <Box
         w={'full'}
         maxW="900px"
@@ -21,7 +22,7 @@ const BasicCard: React.FC<IBasicCardProps> = ({ categorie, subtitle, text }) => 
       >
         <Stack>
           <Text
-            color={'gray.500'}
+            style={{ color: useColorModeValue('gray.500', 'gray.100') }}
             textTransform={'uppercase'}
             fontWeight={800}
             fontSize={'sm'}
@@ -30,13 +31,13 @@ const BasicCard: React.FC<IBasicCardProps> = ({ categorie, subtitle, text }) => 
             {categorie}
           </Text>
           <Heading
-            color={useColorModeValue('gray.700', 'white')}
+            style={{ color: useColorModeValue('gray.900', 'white') }}
             fontSize={'2xl'}
             fontFamily={'body'}
           >
             {subtitle}
           </Heading>
-          <Text color={'gray.500'}>{text}</Text>
+          {children} {content && <Text color={'gray.500'}>{content}</Text>}
         </Stack>
       </Box>
     </Center>
