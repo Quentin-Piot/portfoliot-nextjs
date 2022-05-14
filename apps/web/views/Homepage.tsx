@@ -1,6 +1,5 @@
 import React from 'react'
-import { Box, Center, Heading, HStack, IconButton, Image, Stack, VStack } from '@chakra-ui/react'
-import { AiFillLinkedin } from 'react-icons/ai'
+import { Box, Center, HStack, Image, Stack, VStack } from '@chakra-ui/react'
 import BasicCard from 'components/cards/BasicCard'
 import { useTranslation } from 'react-i18next'
 
@@ -22,20 +21,6 @@ const Homepage: React.FC = () => {
           />
         </Stack>
       </HStack>
-
-      <Heading fontSize={'2xl'} pt={10}>
-        {t('common.externalResources')}
-      </Heading>
-      <Center>
-        <IconButton
-          onClick={() =>
-            window.open('https://www.linkedin.com/in/quentin-piot/', '_blank')?.focus()
-          }
-          variant="ghost"
-          aria-label="open linkedin"
-          icon={<AiFillLinkedin size={40} />}
-        />
-      </Center>
     </VStack>
   )
 }

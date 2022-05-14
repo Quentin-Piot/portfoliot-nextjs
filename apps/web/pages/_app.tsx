@@ -12,7 +12,7 @@ export const theme = extendTheme({
       // styles for the `a`
       a: {
         _hover: {
-          bgColor: 'red',
+          textDecoration: 'underline',
         },
       },
     },

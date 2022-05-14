@@ -1,16 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import {
-  Box,
-  Drawer,
-  DrawerContent,
-  Text,
-  useColorModeValue,
-  useDisclosure,
-} from '@chakra-ui/react'
+import { Box, Drawer, DrawerContent, useColorModeValue, useDisclosure } from '@chakra-ui/react'
 import Sidebar from '../components/navbar/Sidebar'
 import MobileNavbar from '../components/navbar/MobileNavbar'
 import styles from './MainLayout.module.css'
 import DisplacementSphere from 'components/background/DisplacementSphere'
+import Footer from 'components/footer/Footer'
 
 interface IMainLayoutProps {
   children: React.ReactNode
@@ -44,18 +38,12 @@ const MainLayout: React.FC<IMainLayoutProps> = ({ children }) => {
         <Box ml={{ base: 0, md: 60 }} height="100%" position={'relative'} bgColor={'transparent'}>
           {hasMounted && <DisplacementSphere />}
 
-          <div className={styles.container}>{children}</div>
+          <div className={styles.container}>
+            <div className={styles.innerContainer}>{children}</div>
+            <Footer />
+          </div>
         </Box>
       </Box>
-      <Text
-        textAlign={{ base: 'center', md: 'right' }}
-        bg={useColorModeValue('grey.100', 'gray.800')}
-        color={useColorModeValue('grey.800', 'gray.100')}
-        pr={5}
-        fontFamily="monospace"
-      >
-        Built using Typescript, React, Next.js, ChakraUI, Turborepo, yarn workspaces, Three.js, ...
-      </Text>
     </Box>
   )
 }
