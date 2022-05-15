@@ -75,6 +75,17 @@
         "subtitle": "Mécanicien",
         "description": ""
       }
+    },
+    "projects": {
+      "tab": {
+        "categories": {
+          "duration": "Durée",
+          "numberOfPeople": "Nombre de personnes",
+          "primaryRole": "Rôle principal",
+          "skillsUsed": "Compétences utilisées",
+          "lessonsLearned": "Leçons apprises"
+        }
+      }
     }
   }
 }

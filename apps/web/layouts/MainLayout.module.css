@@ -16,7 +16,7 @@
 
 .innerContainer {
   min-height: calc(100% - 190px) ;
-  padding: 60px;
+  padding: 40px;
   overflow: hidden;
 
 }

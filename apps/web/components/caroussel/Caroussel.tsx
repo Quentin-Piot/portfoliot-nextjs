@@ -1,14 +1,14 @@
-import React, { useLayoutEffect, useCallback, useEffect, useState, useMemo, useRef } from 'react'
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 
 import {
-  useMediaQuery,
-  useTheme,
-  Progress,
-  VStack,
+  Box,
   Button,
   Flex,
-  Box,
+  Progress,
   useColorModeValue,
+  useMediaQuery,
+  useTheme,
+  VStack,
 } from '@chakra-ui/react'
 
 import { motion, useAnimation, useMotionValue } from 'framer-motion'
@@ -70,8 +70,8 @@ const ChakraCarousel: React.FC<IChakraCarouselProps> = ({ children, gap }) => {
     }
     if (isGreaterThanXL) {
       setItemWidth(sliderWidth - gap)
-      setMultiplier(0.35)
-      setConstraint(3)
+      setMultiplier(0.5)
+      setConstraint(1)
     }
   }, [isBetweenBaseAndMd, isBetweenMdAndXl, isGreaterThanXL, sliderWidth, gap])
 
@@ -389,7 +389,7 @@ const Item = ({
         mr: `${gap}px`,
       }}
       py="4px"
-      height={{ base: '70vh', md: '60vh' }}
+      height={{ base: '70vh', md: '80vh' }}
     >
       {children}
     </Flex>
