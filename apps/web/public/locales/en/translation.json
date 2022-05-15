@@ -22,6 +22,34 @@
           "softwareEngineer": "Full stack Engineer",
           "text":"Full-stack engineer graduated from a French engineering school and who had completed a semester at KAIST. I am well-versed in a wide range of frontend technologies (major SPA frameworks) and backend technologies (Node.js/Nest.js/Hapi.js, Java/Spring). I also had the opportunity to work on other technologies during my internships in major French multinationals or my studies (Android, Kotlin).\nPassionate about technology, I was also able to learn in autonomy the principles of application design, lean management or clean architecture"  }
       }
+    },
+    "education" : {
+      "followedCourses": "Followed courses",
+      "kaist" : {
+        "title": "Korea Advanced Institute of Science and Technology",
+        "subtitle": "Exchange Semester",
+        "courses": {
+          "course1": "CS489 : Computer ethics and social issues",
+          "course2": "CS442 : Mobile computing, applications and networking",
+          "course3": "CS484 : Introduction to Computer Vision",
+          "course4": "HS003 : Introduction to Korean"
+        }
+      },"utt" : {
+        "title": "University of Technology of Troyes",
+        "subtitle": "Master",
+        "courses": {
+          "course1": "LOO2 : Object-Oriented System Analysis and Design",
+          "course2": "NF02 : Modeling and evaluation of complex IT systems",
+          "course3": "GL02 : Software Engineering",
+          "course4": "IF14: Information System Analysis",
+          "course5": "IF26: Secure design of mobile applications"
+        }
+
+      },
+      "bac" : {
+          "title": "Scientific Baccalaureate",
+          "subtitle": "Baccalaureate"
+        }
     }
   }
 }

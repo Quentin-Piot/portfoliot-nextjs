@@ -117,8 +117,8 @@ const DisplacementSphere = (props: any) => {
       const canvasHeight = window.innerHeight / 2
       const windowWidth =
         window.innerWidth <= media.mobile ? window.innerWidth : window.innerWidth / 2
-      const fullHeight = canvasHeight + canvasHeight * 0.3
-      canvasRef.current.style.height = fullHeight
+      const fullHeight = canvasHeight + canvasHeight * 0.2
+      canvasRef.current.style.height = fullHeight + 100
       renderer.current.setSize(windowWidth, fullHeight)
       camera.current.aspect = windowWidth / fullHeight
       camera.current.updateProjectionMatrix()

@@ -1,27 +1,55 @@
 {
-  "common" : {
-    "aboutMe" : "A propos",
-    "link" : "Lien",
+  "common": {
+    "aboutMe": "A propos",
+    "link": "Lien",
     "externalResources": "Ressources externes"
   },
   "components": {
-    "navbar" : {
-      "items" : {
+    "navbar": {
+      "items": {
         "home": "Accueil",
-        "experience":"Experience",
+        "experience": "Experience",
         "projects": "Projets",
-        "education":"Education",
+        "education": "Education",
         "about": "A propos"
       }
     }
   },
-  "pages" : {
-    "homepage" : {
-      "cards" : {
-        "aboutMe" : {
+  "pages": {
+    "homepage": {
+      "cards": {
+        "aboutMe": {
           "softwareEngineer": "Ingénieur full stack",
-          "text":"Ingénieur full-stack diplômé de l'Université de Technologie de Troyes (UTT) et ayant effectué un semestre à KAIST en Corée du Sud. Je maîtrise un large éventail de technologies frontend (principaux frameworks SPA : React, Vue, Next.js) et backend (Node.js/Nest.js/Hapi.js, Java/Spring). J'ai également eu l'occasion de travailler sur d'autres technologies lors de mes stages dans de grandes multinationales françaises ou de mes études (Android, Kotlin).\nPassionné par la technologie, j'ai également pu apprendre en autonomie les principes de conception d'applications, de lean management ou de clean architecture"
+          "text": "Ingénieur full-stack diplômé de l'Université de Technologie de Troyes (UTT) et ayant effectué un semestre à KAIST en Corée du Sud. Je maîtrise un large éventail de technologies frontend (principaux frameworks SPA : React, Vue, Next.js) et backend (Node.js/Nest.js/Hapi.js, Java/Spring). J'ai également eu l'occasion de travailler sur d'autres technologies lors de mes stages dans de grandes multinationales françaises ou de mes études (Android, Kotlin).\nPassionné par la technologie, j'ai également pu apprendre en autonomie les principes de conception d'applications, de lean management ou de clean architecture"
         }
+      }
+    },
+    "education": {
+      "followedCourses": "Cours suivis",
+      "kaist": {
+        "title": "Korea Advanced Institute of Science and Technology",
+        "subtitle": "Semestre d'échange",
+        "courses": {
+          "course1": "CS489 : Déontologie informatique et enjeux sociaux",
+          "course2": "CS442 : Applications et réseaux informatiques mobiles",
+          "course3": "CS484 : Introduction à la vision par ordinateur",
+          "course4": "HS003 : Introduction au coréen"
+        }
+      },
+      "utt": {
+        "title": "Université de Technologie de Troyes",
+        "subtitle": "Diplôme d'ingénieur",
+        "courses": {
+          "course1": "LOO2 : Principe et pratique de la programmation objets",
+          "course2": "NF02 : Modélisation et évaluation des systèmes complexes",
+          "course3": "GL02 : Fondements de l'ingénierie logicielle",
+          "course4": "IF14: Analyse de Système d'Information",
+          "course5": "IF26: Conception sécurisée d'applications mobiles"
+        }
+      },
+      "bac" : {
+        "title": "Baccalauréat scientifique",
+        "subtitle": "Baccalauréat"
       }
     }
   }

@@ -1,10 +1,12 @@
 import React, { useMemo } from 'react'
 import { Box, BoxProps, CloseButton, Flex, Heading, useColorModeValue } from '@chakra-ui/react'
-import { FiCompass, FiHome, FiSettings, FiStar, FiTrendingUp } from 'react-icons/fi'
+import { FiHome } from 'react-icons/fi'
 import { IconType } from 'react-icons'
 import NavItem from './NavItem'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'react-i18next'
+import { AiFillExperiment, AiFillProject } from 'react-icons/ai'
+import { FaSchool } from 'react-icons/fa'
 
 export interface ILinkItemProps {
   name: string
@@ -23,10 +25,13 @@ const Sidebar: React.FC<ISidebarProps> = ({ onClose, ...rest }) => {
   const linkItems = useMemo<Array<ILinkItemProps>>(
     () => [
       { name: t('components.navbar.items.home'), icon: FiHome, route: '/' },
-      { name: t('components.navbar.items.experience'), icon: FiTrendingUp, route: '/experience' },
-      { name: t('components.navbar.items.projects'), icon: FiCompass, route: '/projects' },
-      { name: t('components.navbar.items.education'), icon: FiStar, route: '/education' },
-      { name: t('components.navbar.items.about'), icon: FiSettings, route: '/about' },
+      {
+        name: t('components.navbar.items.experience'),
+        icon: AiFillExperiment,
+        route: '/experience',
+      },
+      { name: t('components.navbar.items.projects'), icon: AiFillProject, route: '/projects' },
+      { name: t('components.navbar.items.education'), icon: FaSchool, route: '/education' },
     ],
     [t]
   )
