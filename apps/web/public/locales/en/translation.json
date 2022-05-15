@@ -57,17 +57,17 @@
       "sparkmate": {
         "title": "Full-time job",
         "subtitle" : "Software Engineer",
-        "description" : "From ideas and conception to prototyping and pre production, we support the customer and develop technological solutions"
+        "description": "From ideas and conception to prototyping and pre production, we support the customer and develop technological solutions \n\n•Project analysis: understanding of project vision, writting of class diagrams, use cases, state diagrams, etc.\n•Project management: acceptance testing, planning, monitoring, etc.\n•Application design modeling (UI wise and architecture wise) \n•Development of applications (frontend and backend)\n•CI/CD using GitLab, docker and AWS/GCP\n"
       },
       "ds": {
         "title": "6 months internship",
         "subtitle" : "FullStack Engineer",
-        "description" : "..."
+        "description" : "Development of widget prototypes (new features, evolutions, fixes)\n• Process improvements: source code management, automated tests, build, continuous rollout.\n• Use of the latest technologies and frameworks, front-end (React, Vue, d3), back-end (AWS, NestJs)\n• Development, testing and release workflow (integration / continuous delivery / deployment) : Git, GitLab, webpack, TDD, Linting..."
       },
       "af": {
         "title": "6 months internship",
         "subtitle" : "FullStack Engineer",
-        "description" : "..."
+        "description" : "Improvement of existing Angular/Electron based applications\n• Redesigning the GUIs of some applications to match the needs of the pilots\n• Improving backend performance by code and complexity analysis and rework on Websocket\n• Implementation of a Service Worker on an app to make it a Progressive Web App"
       },
       "ar": {
         "title": "1 month Internship",

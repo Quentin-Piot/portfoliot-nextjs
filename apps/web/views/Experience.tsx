@@ -30,8 +30,13 @@ const Experience: React.FC = () => {
               {t('pages.experience.sparkmate.title')}
             </Text>
             <Text style={{ fontWeight: 700 }}>{t('pages.experience.description')}</Text>
-            <Text>{t('pages.experience.sparkmate.description')}</Text>
-
+            <UnorderedList w="100%" px={3}>
+              {t('pages.experience.sparkmate.description')
+                .split('•')
+                .map((text, i) => (
+                  <ListItem key={i}>{text}</ListItem>
+                ))}
+            </UnorderedList>
             <Text style={{ fontWeight: 700 }}>{t('pages.experience.mainStacks')}</Text>
             <UnorderedList w="100%" px={3}>
               <ListItem>React, Next.js, Redux, Typescript</ListItem>
@@ -58,8 +63,13 @@ const Experience: React.FC = () => {
               {t('pages.experience.ds.title')}
             </Text>
             <Text style={{ fontWeight: 700 }}>{t('pages.experience.description')}</Text>
-            <Text>{t('pages.experience.ds.description')}</Text>
-
+            <UnorderedList w="100%" px={3}>
+              {t('pages.experience.ds.description')
+                .split('•')
+                .map((text, i) => (
+                  <ListItem key={i}>{text}</ListItem>
+                ))}
+            </UnorderedList>
             <Text style={{ fontWeight: 700 }}>{t('pages.experience.mainStacks')}</Text>
             <UnorderedList w="100%" px={3}>
               <ListItem>React, Vue.js, d3.js, Typescript</ListItem>
@@ -86,8 +96,13 @@ const Experience: React.FC = () => {
               {t('pages.experience.af.title')}
             </Text>
             <Text style={{ fontWeight: 700 }}>{t('pages.experience.description')}</Text>
-            <Text>{t('pages.experience.af.description')}</Text>
-
+            <UnorderedList w="100%" px={3}>
+              {t('pages.experience.af.description')
+                .split('•')
+                .map((text, i) => (
+                  <ListItem key={i}>{text}</ListItem>
+                ))}
+            </UnorderedList>
             <Text style={{ fontWeight: 700 }}>{t('pages.experience.mainStacks')}</Text>
             <UnorderedList w="100%" px={3}>
               <ListItem>Angular</ListItem>
@@ -113,8 +128,6 @@ const Experience: React.FC = () => {
             >
               {t('pages.experience.ar.title')}
             </Text>
-            <Text style={{ fontWeight: 700 }}>{t('pages.experience.description')}</Text>
-            <Text>{t('pages.experience.ar.description')}</Text>
           </VStack>
         </BasicCard>
       </CustomChakraVerticalElement>

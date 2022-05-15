@@ -54,26 +54,26 @@
     },
     "experience": {
       "description": "Description",
-      "mainStacks" : "Principales technologies",
+      "mainStacks": "Principales technologies",
       "sparkmate": {
         "title": "CDI",
-        "subtitle" : "Ingénieur produit",
-        "description" : "From ideas and conception to prototyping and pre production, we support the customer and develop technological solutions"
+        "subtitle": "Ingénieur produit",
+        "description": "De l'idée et de la conception au prototypage et à la pré-production, nous accompagnons le client et développons des solutions technologiques. \n\n•Analyse du projet : compréhension de la vision du projet, rédaction de diagrammes de classes, de cas d'utilisation, de diagrammes d'état, etc.\n•Gestion de projet : tests d'acceptation, planification, suivi, etc.\n•  Modélisation du design des applications (UI et architecture). \n•Développement d'applications (frontend et backend).\n•CI/CD en utilisant GitLab, Docker et AWS/GCP."
       },
       "ds": {
         "title": "Stage de fin d'études",
-        "subtitle" : "Ingénieur logiciel",
-        "description" : "description"
+        "subtitle": "Ingénieur logiciel",
+        "description": "Développement de prototypes de widgets (nouvelles fonctionnalités, évolutions, corrections)\n• Amélioration des processus : gestion du code source, tests automatisés, build, déploiement continu.\n• Utilisation des dernières technologies et frameworks, front-end (React, Vue, d3), back-end (AWS, NestJs)\n• Workflow de développement, de test et de release (intégration / livraison continue / déploiement) : Git, GitLab, webpack, TDD, Linting..."
       },
       "af": {
         "title": "Stage de fin d'études",
-        "subtitle" : "Ingénieur logiciel",
-        "description" : ""
+        "subtitle": "Ingénieur logiciel",
+        "description": "Amélioration des applications Angular/Electron du service\n• Refonte des IHM de plusieurs applications pour répondre aux besoins du métier\n• Amélioration du Backend de plusieurs applications par analyse de code/complexité et refonte WebSocket\n• Implémentation d’un Service Worker sur une application pour en faire une Progressive Web App\n"
       },
       "ar": {
         "title": "Stage ouvrier",
-        "subtitle" : "Mécanicien",
-        "description" : ""
+        "subtitle": "Mécanicien",
+        "description": ""
       }
     }
   }

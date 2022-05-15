@@ -27,7 +27,7 @@ const BasicCard: React.FC<IBasicCardProps> = ({ children, categorie, subtitle, c
         bg={useColorModeValue('white', 'gray.900')}
         boxShadow={'2xl'}
         rounded={'md'}
-        p={6}
+        p={4}
         overflow={'hidden'}
       >
         <Stack>
