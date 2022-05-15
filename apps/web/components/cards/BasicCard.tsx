@@ -20,15 +20,15 @@ interface IBasicCardProps {
 
 const BasicCard: React.FC<IBasicCardProps> = ({ children, categorie, subtitle, content, logo }) => {
   return (
-    <Center>
+    <Center height="100%">
       <Box
         w={'full'}
-        maxW="900px"
         bg={useColorModeValue('white', 'gray.900')}
         boxShadow={'2xl'}
         rounded={'md'}
-        p={4}
+        p={{ base: 2, md: 4 }}
         overflow={'hidden'}
+        height="100%"
       >
         <Stack>
           <HStack justifyContent="space-between">
@@ -50,7 +50,15 @@ const BasicCard: React.FC<IBasicCardProps> = ({ children, categorie, subtitle, c
                 {subtitle}
               </Heading>
             </Stack>
-            {logo && <Image ml="auto" height={20} src={logo} alt={'logo card'} rounded="md" />}
+            {logo && (
+              <Image
+                display={{ base: 'none', md: 'inherit' }}
+                src={logo}
+                height={20}
+                alt={'logo card'}
+                rounded="md"
+              />
+            )}
           </HStack>
           {children} {content && <Text color={'gray.500'}>{content}</Text>}
         </Stack>

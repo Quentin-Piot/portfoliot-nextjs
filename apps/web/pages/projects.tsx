@@ -1,8 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-
-import { IconButton } from '@chakra-ui/react'
-import { AiFillLinkedin } from 'react-icons/ai'
+import ProjectsView from 'views/Projects'
 import React from 'react'
 
 const Projects: NextPage = () => {
@@ -12,12 +10,7 @@ const Projects: NextPage = () => {
         <title>Projects</title>
       </Head>
 
-      <IconButton
-        onClick={() => window.open('https://www.linkedin.com/in/quentin-piot/', '_blank')?.focus()}
-        variant="ghost"
-        aria-label="open linkedin"
-        icon={<AiFillLinkedin size={32} />}
-      />
+      <ProjectsView />
     </>
   )
 }

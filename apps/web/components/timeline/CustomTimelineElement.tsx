@@ -29,10 +29,11 @@ const CustomChakraVerticalElement: React.FC<ICustomChakraVerticalElementProps> =
       icon={experience ? <MdComputer /> : <FaSchool />}
       contentStyle={{
         background: useColorModeValue(
-          'var(--chakra-colors-gray-300)',
-          'var(--chakra-colors-gray-700)'
+          'var(--chakra-colors-gray-100)',
+          'var(--chakra-colors-gray-900)'
         ),
         color: useColorModeValue('var(--chakra-colors-gray-900)', 'var(--chakra-colors-gray-100)'),
+        padding: 0,
       }}
     >
       {children}
