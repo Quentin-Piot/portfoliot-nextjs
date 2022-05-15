@@ -4,6 +4,7 @@ import BasicCard from 'components/cards/BasicCard'
 import { useTranslation } from 'react-i18next'
 import { VerticalTimeline } from 'react-vertical-timeline-component'
 import CustomChakraVerticalElement from 'components/timeline/CustomTimelineElement'
+import 'react-vertical-timeline-component/style.min.css'
 
 const Education: React.FC = () => {
   const { t } = useTranslation()
@@ -21,7 +22,7 @@ const Education: React.FC = () => {
               {t('pages.education.utt.title')}
             </Text>
             <Text style={{ fontWeight: 700 }}>{t('pages.education.followedCourses')}</Text>
-            <UnorderedList>
+            <UnorderedList w="100%" px={3}>
               <ListItem>{t('pages.education.utt.courses.course1')}</ListItem>
               <ListItem>{t('pages.education.utt.courses.course2')}</ListItem>
               <ListItem>{t('pages.education.utt.courses.course3')}</ListItem>
@@ -39,7 +40,7 @@ const Education: React.FC = () => {
               (QS :<strong> #41</strong>)
             </Text>
             <Text style={{ fontWeight: 700 }}>{t('pages.education.followedCourses')}</Text>
-            <UnorderedList>
+            <UnorderedList w="100%" px={3}>
               <ListItem>{t('pages.education.kaist.courses.course1')}</ListItem>
               <ListItem>{t('pages.education.kaist.courses.course2')}</ListItem>
               <ListItem>{t('pages.education.kaist.courses.course3')}</ListItem>

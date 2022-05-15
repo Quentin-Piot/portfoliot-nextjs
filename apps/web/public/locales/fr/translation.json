@@ -47,9 +47,33 @@
           "course5": "IF26: Conception sécurisée d'applications mobiles"
         }
       },
-      "bac" : {
+      "bac": {
         "title": "Baccalauréat scientifique",
         "subtitle": "Baccalauréat"
+      }
+    },
+    "experience": {
+      "description": "Description",
+      "mainStacks" : "Principales technologies",
+      "sparkmate": {
+        "title": "CDI",
+        "subtitle" : "Ingénieur produit",
+        "description" : "From ideas and conception to prototyping and pre production, we support the customer and develop technological solutions"
+      },
+      "ds": {
+        "title": "Stage de fin d'études",
+        "subtitle" : "Ingénieur logiciel",
+        "description" : "description"
+      },
+      "af": {
+        "title": "Stage de fin d'études",
+        "subtitle" : "Ingénieur logiciel",
+        "description" : ""
+      },
+      "ar": {
+        "title": "Stage ouvrier",
+        "subtitle" : "Mécanicien",
+        "description" : ""
       }
     }
   }
