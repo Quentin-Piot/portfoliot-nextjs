@@ -8,7 +8,7 @@ const Homepage: React.FC = () => {
   return (
     <VStack>
       <HStack minHeight={200} width="100%" flexDirection={{ base: 'column', md: 'row' }} mb={30}>
-        <Center flex={1} height={200}>
+        <Center flex={1} height={200} pb={6}>
           <Box>
             <Image src="/images/me.jpg" borderRadius="full" height={200} alt={'photo of me'} />
           </Box>
@@ -18,6 +18,7 @@ const Homepage: React.FC = () => {
             categorie={t('common.aboutMe')}
             subtitle={t('pages.homepage.cards.aboutMe.softwareEngineer')}
             content={t('pages.homepage.cards.aboutMe.text')}
+            width="800px"
           />
         </Stack>
       </HStack>

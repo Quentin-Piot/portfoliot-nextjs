@@ -59,8 +59,8 @@ const Footer: React.FC = () => {
         <Stack direction={'row'} spacing={6}>
           <Link href={'/'}>{t('components.navbar.items.home')}</Link>
           <Link href={'/experience'}>{t('components.navbar.items.experience')}</Link>
-          <Link href={'/projects'}>{t('components.navbar.items.projects')}</Link>
           <Link href={'/education'}>{t('components.navbar.items.education')}</Link>
+          <Link href={'/projects'}>{t('components.navbar.items.projects')}</Link>
         </Stack>
       </Container>
 

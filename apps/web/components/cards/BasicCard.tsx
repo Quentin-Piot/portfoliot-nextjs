@@ -16,17 +16,25 @@ interface IBasicCardProps {
   logo?: string
   content?: React.ReactNode
   children?: React.ReactNode
+  width?: string
 }
 
-const BasicCard: React.FC<IBasicCardProps> = ({ children, categorie, subtitle, content, logo }) => {
+const BasicCard: React.FC<IBasicCardProps> = ({
+  children,
+  categorie,
+  subtitle,
+  content,
+  logo,
+  width = 'full',
+}) => {
   return (
     <Center height="100%">
       <Box
-        w={'full'}
+        w={{ base: 'full', md: width }}
         bg={useColorModeValue('white', 'gray.900')}
         boxShadow={'2xl'}
         rounded={'md'}
-        p={{ base: 2, md: 6 }}
+        p={{ base: 3, md: 6 }}
         overflow={'hidden'}
         height="100%"
       >

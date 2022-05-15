@@ -30,8 +30,8 @@ const Sidebar: React.FC<ISidebarProps> = ({ onClose, ...rest }) => {
         icon: AiFillExperiment,
         route: '/experience',
       },
-      { name: t('components.navbar.items.projects'), icon: AiFillProject, route: '/projects' },
       { name: t('components.navbar.items.education'), icon: FaSchool, route: '/education' },
+      { name: t('components.navbar.items.projects'), icon: AiFillProject, route: '/projects' },
     ],
     [t]
   )
@@ -59,6 +59,7 @@ const Sidebar: React.FC<ISidebarProps> = ({ onClose, ...rest }) => {
           route={link.route}
           active={link.route === router.asPath}
           suppressHydrationWarning
+          onClose={onClose}
         >
           {link.name}
         </NavItem>

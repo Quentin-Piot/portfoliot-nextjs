@@ -25,7 +25,7 @@ export const theme = extendTheme({
     Button: {
       baseStyle: {
         _hover: {
-          backgroundColor: 'red',
+          backgroundColor: 'gray.300',
         },
       },
     },

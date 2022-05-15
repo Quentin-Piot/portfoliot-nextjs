@@ -193,7 +193,7 @@ const Slider = ({
           variant="link"
           minW={0}
         >
-          <FiChevronLeft />
+          <FiChevronLeft size={24} />
         </Button>
 
         <Progress
@@ -202,7 +202,7 @@ const Slider = ({
           borderRadius="6px"
           bg={useColorModeValue('gray.400', 'gray.400')}
           flex={1}
-          h="4px"
+          h="5px"
           sx={{
             '> div': {
               backgroundColor: useColorModeValue('gray.900', 'gray.100'),
@@ -219,7 +219,7 @@ const Slider = ({
           zIndex={2}
           minW={0}
         >
-          <FiChevronRight />
+          <FiChevronRight size={24} />
         </Button>
       </Flex>
     </>
@@ -389,7 +389,7 @@ const Item = ({
         mr: `${gap}px`,
       }}
       py="4px"
-      height={{ base: '70vh', md: '80vh' }}
+      height={{ base: '100%', md: '80vh' }}
     >
       {children}
     </Flex>

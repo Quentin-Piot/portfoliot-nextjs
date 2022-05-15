@@ -40,9 +40,10 @@ const MobileNavbar = ({ onOpen, ...rest }: IMobileProps) => {
 
       <Heading
         display={{ base: 'flex', md: 'none' }}
-        fontSize="2xl"
+        fontSize={{ base: 'xl', md: '2xl' }}
         fontFamily="monospace"
         fontWeight="bold"
+        pl={6}
       >
         Quentin Piot
       </Heading>

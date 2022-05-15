@@ -93,10 +93,10 @@ const DisplacementSphere = (props: any) => {
   }, [])
 
   useEffect(() => {
-    const dirLight = new DirectionalLight(rgbToThreeColor('40 40 40'), 0.9)
+    const dirLight = new DirectionalLight(rgbToThreeColor('100 100 100'), 0.9)
     const ambientLight = new AmbientLight(
       rgbToThreeColor('250 250 250'),
-      colorMode === 'light' ? 0.1 : 0.6
+      colorMode === 'light' ? 0.2 : 0.6
     )
 
     dirLight.position.z = 100

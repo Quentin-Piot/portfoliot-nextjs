@@ -1,16 +1,17 @@
-import { Flex, FlexProps, Icon, useColorMode } from '@chakra-ui/react'
+import { Box, Button, FlexProps, Icon, useColorMode } from '@chakra-ui/react'
 import { IconType } from 'react-icons'
 import React, { ReactText } from 'react'
-import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 interface INavItemProps extends FlexProps {
   icon: IconType
   children: ReactText
   route: string
   active: boolean
+  onClose: () => void
 }
 
-const NavItem = ({ icon, children, route, active, ...rest }: INavItemProps) => {
+const NavItem = ({ icon, children, route, active, onClose }: INavItemProps) => {
   const { colorMode } = useColorMode()
   const colors = {
     light: {
@@ -22,29 +23,36 @@ const NavItem = ({ icon, children, route, active, ...rest }: INavItemProps) => {
       color: { base: 'white', hover: 'black', active: 'black' },
     },
   }
+  const router = useRouter()
   return (
-    <Link href={route} style={{ textDecoration: 'none' }}>
-      <a>
-        <Flex
-          align="center"
-          p="4"
-          mx="4"
-          borderRadius="lg"
-          role="group"
-          cursor="pointer"
-          bg={colors[colorMode]['background'][active ? 'active' : 'base']}
-          color={colors[colorMode]['color'][active ? 'active' : 'base']}
-          _hover={{
-            bg: colors[colorMode]['background'][active ? 'active' : 'hover'],
-            color: colors[colorMode]['color'][active ? 'active' : 'hover'],
-          }}
-          {...rest}
-        >
-          {icon && <Icon mr="4" fontSize="16" as={icon} />}
-          {children}
-        </Flex>
-      </a>
-    </Link>
+    <Box>
+      <Button
+        variant="link"
+        style={{ textDecoration: 'none' }}
+        p="4"
+        mx="4"
+        borderRadius="lg"
+        role="group"
+        cursor="pointer"
+        width="calc(100% - 25px)"
+        maxWidth="200px"
+        textAlign="left"
+        onClick={async () => {
+          await router.push(route)
+          onClose()
+        }}
+        justifyContent="flex-start"
+        bg={colors[colorMode]['background'][active ? 'active' : 'base']}
+        color={colors[colorMode]['color'][active ? 'active' : 'base']}
+        _hover={{
+          bg: colors[colorMode]['background'][active ? 'active' : 'hover'],
+          color: colors[colorMode]['color'][active ? 'active' : 'hover'],
+        }}
+      >
+        {icon && <Icon mr="4" fontSize="16" as={icon} />}
+        {children}
+      </Button>
+    </Box>
   )
 }
 

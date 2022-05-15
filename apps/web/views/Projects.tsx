@@ -41,7 +41,7 @@ const CustomProjectTab = ({ project }: { project: string }) => {
             minHeight={12}
             px={5}
           >
-            <Box flex={1} borderRight="1px solid" borderColor={borderColor} height={'100%'} py={3}>
+            <Box w={100} borderRight="1px solid" borderColor={borderColor} height={'100%'} py={3}>
               {t(`pages.projects.tab.categories.${value}`)}
             </Box>
             <Box flex={2} px={5}>
@@ -85,7 +85,7 @@ const Projects = () => {
             <Tab>Demo</Tab>
           </TabList>
           <TabPanels>
-            <TabPanel overflowY={{ base: 'auto', md: 'hidden' }} maxHeight={'70vh'}>
+            <TabPanel>
               <Flex flex={1} flexDirection={{ base: 'column', md: 'row' }}>
                 <Image
                   userSelect="none"
@@ -117,13 +117,7 @@ const Projects = () => {
         </Tabs>
       </CarouselItem>
       <CarouselItem categorie={'React Web application'} subtitle={'Football Match'}>
-        <Flex
-          flex={1}
-          py={5}
-          flexDirection={{ base: 'column', md: 'row' }}
-          overflowY={{ base: 'auto', md: 'hidden' }}
-          maxHeight={'70vh'}
-        >
+        <Flex flex={1} py={5} flexDirection={{ base: 'column', md: 'row' }}>
           <Image
             src="images/screenshot-football-match.png"
             alt="football match logo"
@@ -141,13 +135,7 @@ const Projects = () => {
         </Flex>
       </CarouselItem>
       <CarouselItem categorie={'Arduino / Kotlin'} subtitle={'Inaudible communication'}>
-        <Flex
-          flex={1}
-          py={5}
-          flexDirection={{ base: 'column', md: 'row' }}
-          overflowY={{ base: 'auto', md: 'hidden' }}
-          maxHeight={'70vh'}
-        >
+        <Flex flex={1} py={5} flexDirection={{ base: 'column', md: 'row' }}>
           <VStack pt={5}>
             <Image
               src="images/screenshot-inaudible.png"
