@@ -3,6 +3,12 @@ const withPWA = require('next-pwa')
 const nextConfig = {
   reactStrictMode: false,
   swcMinify: true,
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   pwa: {
     dest: 'public',
     register: true,
