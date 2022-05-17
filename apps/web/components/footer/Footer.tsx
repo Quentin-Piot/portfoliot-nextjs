@@ -71,7 +71,7 @@ const Footer: React.FC = () => {
       >
         <Container
           as={Stack}
-          maxW={'6xl'}
+          maxW={'100%'}
           py={4}
           direction={{ base: 'column', md: 'row' }}
           spacing={4}
@@ -79,10 +79,11 @@ const Footer: React.FC = () => {
           align={{ base: 'center', md: 'center' }}
         >
           <Text>
-            Built from scratch with React, Typescript, Next.js, PWA, Three.js, ChakraUI, Turborepo,
-            etc.
+            <strong>{t('footer.inDevelopment.still')}</strong>{' '}
+            {t('footer.inDevelopment.startingDate')}
           </Text>
-          <Stack direction={'row'} spacing={6}>
+          <Text>{t('footer.builtFromScratch')}</Text>
+          <Stack direction={'row'} spacing={6} display={{ base: 'none', md: 'block' }}>
             <SocialButton label={'LinkedIn'} href={'https://www.linkedin.com/in/quentin-piot/'}>
               <AiFillLinkedin />
             </SocialButton>

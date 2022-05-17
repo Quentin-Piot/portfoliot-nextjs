@@ -1,11 +1,19 @@
 import React, { useMemo } from 'react'
-import { Box, BoxProps, CloseButton, Flex, Heading, useColorModeValue } from '@chakra-ui/react'
+import {
+  Box,
+  BoxProps,
+  CloseButton,
+  Divider,
+  Flex,
+  Heading,
+  useColorModeValue,
+} from '@chakra-ui/react'
 import { FiHome } from 'react-icons/fi'
 import { IconType } from 'react-icons'
 import NavItem from './NavItem'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'react-i18next'
-import { AiFillExperiment, AiFillProject } from 'react-icons/ai'
+import { AiFillExperiment, AiFillLinkedin, AiFillProject } from 'react-icons/ai'
 import { FaSchool } from 'react-icons/fa'
 
 export interface ILinkItemProps {
@@ -52,6 +60,7 @@ const Sidebar: React.FC<ISidebarProps> = ({ onClose, ...rest }) => {
         </Heading>
         <CloseButton display={{ base: 'flex', md: 'none' }} onClick={onClose} />
       </Flex>
+
       {linkItems.map((link) => (
         <NavItem
           key={link.name}
@@ -64,6 +73,17 @@ const Sidebar: React.FC<ISidebarProps> = ({ onClose, ...rest }) => {
           {link.name}
         </NavItem>
       ))}
+      <Divider />
+      <NavItem
+        icon={AiFillLinkedin}
+        route="https://www.linkedin.com/in/quentin-piot/"
+        active={false}
+        suppressHydrationWarning
+        onClose={onClose}
+        openInNewTab
+      >
+        LinkedIn
+      </NavItem>
     </Box>
   )
 }

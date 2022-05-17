@@ -9,9 +9,17 @@ interface INavItemProps extends FlexProps {
   route: string
   active: boolean
   onClose: () => void
+  openInNewTab?: boolean
 }
 
-const NavItem = ({ icon, children, route, active, onClose }: INavItemProps) => {
+const NavItem = ({
+  icon,
+  children,
+  route,
+  active,
+  onClose,
+  openInNewTab = false,
+}: INavItemProps) => {
   const { colorMode } = useColorMode()
   const colors = {
     light: {
@@ -38,7 +46,7 @@ const NavItem = ({ icon, children, route, active, onClose }: INavItemProps) => {
         maxWidth="200px"
         textAlign="left"
         onClick={async () => {
-          await router.push(route)
+          openInNewTab ? window.open(route) : await router.push(route)
           onClose()
         }}
         justifyContent="flex-start"

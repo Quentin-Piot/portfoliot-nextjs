@@ -2,6 +2,7 @@ import React from 'react'
 import { Box, Center, HStack, Image, Stack, VStack } from '@chakra-ui/react'
 import BasicCard from 'components/cards/BasicCard'
 import { useTranslation } from 'react-i18next'
+import ReactMarkdown from 'react-markdown'
 
 const Homepage: React.FC = () => {
   const { t } = useTranslation()
@@ -16,10 +17,12 @@ const Homepage: React.FC = () => {
         <Stack flex={2} height="100%">
           <BasicCard
             categorie={t('common.aboutMe')}
-            subtitle={t('pages.homepage.cards.aboutMe.softwareEngineer')}
-            content={t('pages.homepage.cards.aboutMe.text')}
+            subtitle={t('pages.homepage.cards.aboutMe.title')}
             width="800px"
-          />
+          >
+            <br />
+            <ReactMarkdown>{t('pages.homepage.cards.aboutMe.text')}</ReactMarkdown>
+          </BasicCard>
         </Stack>
       </HStack>
     </VStack>

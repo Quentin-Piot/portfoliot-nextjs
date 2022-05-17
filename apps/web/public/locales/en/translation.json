@@ -19,9 +19,8 @@
     "homepage": {
       "cards": {
         "aboutMe": {
-          "softwareEngineer": "Full stack Engineer",
-          "text": "Full-stack engineer graduated from a French engineering school and who had completed a semester at KAIST. I am well-versed in a wide range of frontend technologies (major SPA frameworks) and backend technologies (Node.js/Nest.js/Hapi.js, Java/Spring). I also had the opportunity to work on other technologies during my internships in major French multinationals or my studies (Android, Kotlin).\nPassionate about technology, I was also able to learn in autonomy the principles of application design, lean management or clean architecture"
-        }
+          "title": "Bio",
+          "text": "I am a software engineer with 2 years of experience (including internships in large French companies) passionate about new technologies and always looking for challenges to improve my skills&nbsp;  \nThanks to my past experiences as a Full-Stack engineer or as a student engineer, I was able to develop frontend clients with the three main SPA frameworks (**React, Vue and Angular**) as well as their main associated libraries (**Next.js, Redux, Nuxt, etc.**) but also backends based on Node.js (**Nest.js, Hapi, Strapi**) or **Java/Kotlin (Spring)** .&nbsp;  \nIn the mobile environment, I was also able to develop applications based on **React Native** (Android/Ios) or **Kotlin** (Android).&nbsp;  \nHaving started in small teams with various skills, I was also able to develop **CI/CD** skills using tools such as **Gitlab CI, Docker** as well as **AWS or GCP** (environment preparation, testing, deployment, etc.)&nbsp;  \nBecause of my curious nature, I started to learn new technologies during the last months to open my knowledge: **Rust, Flutter, Python**."   }
       }
     },
     "education": {
@@ -126,5 +125,12 @@
         }
       }
     }
+  },
+  "footer" : {
+    "inDevelopment" : {
+      "startingDate" : "Started in May 2021",
+      "still" : "Still in development."
+    },
+    "builtFromScratch" : " Built from scratch with React, Typescript, Next.js, PWA, Three.js, ChakraUI, Turborepo, etc."
   }
 }

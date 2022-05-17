@@ -19,9 +19,8 @@
     "homepage": {
       "cards": {
         "aboutMe": {
-          "softwareEngineer": "Ingénieur full stack",
-          "text": "Ingénieur full-stack diplômé de l'Université de Technologie de Troyes (UTT) et ayant effectué un semestre à KAIST en Corée du Sud. Je maîtrise un large éventail de technologies frontend (principaux frameworks SPA : React, Vue, Next.js) et backend (Node.js/Nest.js/Hapi.js, Java/Spring). J'ai également eu l'occasion de travailler sur d'autres technologies lors de mes stages dans de grandes multinationales françaises ou de mes études (Android, Kotlin).\nPassionné par la technologie, j'ai également pu apprendre en autonomie les principes de conception d'applications, de lean management ou de clean architecture"
-        }
+          "title": "Bio",
+          "text": "Je suis un ingénieur logiciel doté de 2 années d'expériences (en incluant mes stages dans de grandes entreprises françaises) passionné de nouvelles technologies et toujours à la recherche de défis me permettant de perfectionner mes compétences&nbsp;  \nFort de mes expériences passées en tant qu'ingénieur Full-Stack ou étudiant ingénieur, j'ai pu développer des clients frontend avec les trois principaux frameworks SPA (**React, Vue et Angular**) ainsi que leurs principales librairies associées (**Next.js, Redux, Nuxt, etc.**) mais également des backends basés sur Node.Js (**Nest.js, Hapi, Strapi**) ou **Java/Kotlin (Spring)** .&nbsp;  \nAu niveau de l'environnement mobile, j'ai pu également développer des applications basées sur **React Native** (Android/Ios) ou **Kotlin** (Android).&nbsp;  \nAyant débuté dans des équipes réduites aux compétences variées, j'ai pu également développer de compétences de **CI/CD** à l'aide d'outils tels que **Gitlab CI, Docker** ainsi que **AWS ou GCP** (préparation d'environnement, tests, déploiement, etc.)&nbsp;  \nDe part mon tempérament curieux, j'ai commencé l'apprentissage sur ces derniers mois de nouvelles technologies permettant d'ouvrir également mon champ de connaissances: **Rust, Flutter, Python**."        }
       }
     },
     "education": {
@@ -87,5 +86,12 @@
         }
       }
     }
+  },
+  "footer" : {
+    "inDevelopment" : {
+      "startingDate" : "Débuté en Mai 2021",
+      "still" : "En développement."
+    },
+    "builtFromScratch" : " Bâti de zéro à l'aide de React, Typescript, Next.js, PWA, Three.js, ChakraUI, Turborepo, etc."
   }
 }
