@@ -89,7 +89,7 @@
   },
   "footer" : {
     "inDevelopment" : {
-      "startingDate" : "Débuté en Mai 2021",
+      "startingDate" : "Débuté en Mai 2022",
       "still" : "En développement."
     },
     "builtFromScratch" : " Bâti de zéro à l'aide de React, Typescript, Next.js, PWA, Three.js, ChakraUI, Turborepo, etc."

@@ -20,7 +20,7 @@
       "cards": {
         "aboutMe": {
           "title": "Bio",
-          "text": "I am a software engineer with 2 years of experience (including internships in large French companies) passionate about new technologies and always looking for challenges to improve my skills&nbsp;  \nThanks to my past experiences as a Full-Stack engineer or as a student engineer, I was able to develop frontend clients with the three main SPA frameworks (**React, Vue and Angular**) as well as their main associated libraries (**Next.js, Redux, Nuxt, etc.**) but also backends based on Node.js (**Nest.js, Hapi, Strapi**) or **Java/Kotlin (Spring)** .&nbsp;  \nIn the mobile environment, I was also able to develop applications based on **React Native** (Android/Ios) or **Kotlin** (Android).&nbsp;  \nHaving started in small teams with various skills, I was also able to develop **CI/CD** skills using tools such as **Gitlab CI, Docker** as well as **AWS or GCP** (environment preparation, testing, deployment, etc.)&nbsp;  \nBecause of my curious nature, I started to learn new technologies during the last months to open my knowledge: **Rust, Flutter, Python**."   }
+          "text": "I am a junior software engineer with 2 years of experience (including internships in large French companies) passionate about new technologies and always looking for challenges to improve my skills&nbsp;  \nThanks to my past experiences as a Full-Stack engineer or as a student engineer (UTT and KAIST), I was able to develop frontend clients with the three main SPA frameworks (**React, Vue and Angular**) as well as their main associated libraries (**Next.js, Redux, Nuxt, etc.**) but also backends based on Node.js (**Nest.js, Hapi, Strapi**) or **Java/Kotlin (Spring)** .&nbsp;  \nIn the mobile environment, I was also able to develop applications based on **React Native** (Android/Ios) or **Kotlin** (Android).&nbsp;  \nHaving started in small teams with various skills, I was also able to develop **CI/CD** skills using tools such as **Gitlab CI, Docker** as well as **AWS or GCP** (environment preparation, testing, deployment, etc.)&nbsp;  \nBecause of my curious nature, I started to learn new technologies during the last months to open my knowledge: **Rust, Flutter, Python**."   }
       }
     },
     "education": {
@@ -128,7 +128,7 @@
   },
   "footer" : {
     "inDevelopment" : {
-      "startingDate" : "Started in May 2021",
+      "startingDate" : "Started in May 2022",
       "still" : "Still in development."
     },
     "builtFromScratch" : " Built from scratch with React, Typescript, Next.js, PWA, Three.js, ChakraUI, Turborepo, etc."
