@@ -79,8 +79,7 @@ const Footer: React.FC = () => {
           align={{ base: 'center', md: 'center' }}
         >
           <Text>
-            <strong>{t('footer.inDevelopment.still')}</strong>{' '}
-            {t('footer.inDevelopment.startingDate')}
+            <strong>{t('footer.inDevelopment.still')}</strong>
           </Text>
           <Text>{t('footer.builtFromScratch')}</Text>
           <Stack direction={'row'} spacing={6} display={{ base: 'none', md: 'block' }}>

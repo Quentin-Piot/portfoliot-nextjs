@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Center, Image, VStack } from '@chakra-ui/react'
+import { Center, Image, VStack } from '@chakra-ui/react'
 import dynamic from 'next/dynamic'
 
 const PDFViewer = dynamic(() => import('components/pdfViewer/PdfViewer'), {
@@ -18,19 +18,8 @@ const Homepage: React.FC = () => {
           alt={'photo of me'}
         />
       </Center>
-      {/*  <Stack flex={2} height="100%">*/}
-      {/*    <BasicCard*/}
-      {/*      categorie={t('common.aboutMe')}*/}
-      {/*      subtitle={t('pages.homepage.cards.aboutMe.title')}*/}
-      {/*      width="800px"*/}
-      {/*    >*/}
-      {/*      <br />*/}
-      {/*      <ReactMarkdown>{t('pages.homepage.cards.aboutMe.text')}</ReactMarkdown>*/}
-      {/*    </BasicCard>*/}
-      {/*  </Stack>*/}
-      {/*</HStack>*/}
-      {/*<Divider />*/}
-      <PDFViewer url="/CV_2022.pdf" />
+
+      <PDFViewer url="/CV.pdf" />
     </VStack>
   )
 }
