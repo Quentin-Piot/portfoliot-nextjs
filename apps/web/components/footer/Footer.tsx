@@ -78,9 +78,6 @@ const Footer: React.FC = () => {
           justify={{ base: 'center', md: 'space-between' }}
           align={{ base: 'center', md: 'center' }}
         >
-          <Text>
-            <strong>{t('footer.inDevelopment.still')}</strong>
-          </Text>
           <Text>{t('footer.builtFromScratch')}</Text>
           <Stack direction={'row'} spacing={6} display={{ base: 'none', md: 'block' }}>
             <SocialButton label={'LinkedIn'} href={'https://www.linkedin.com/in/quentin-piot/'}>
