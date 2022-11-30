@@ -20,6 +20,8 @@ import {
 import ChakraCarousel from 'components/caroussel/Caroussel'
 import BasicCard from 'components/cards/BasicCard'
 import { useTranslation } from 'react-i18next'
+import NavItem from 'components/navbar/NavItem'
+import { AiFillPlayCircle } from 'react-icons/ai'
 
 interface ICarousselItemProps {
   children: React.ReactNode
@@ -78,6 +80,46 @@ const Projects = () => {
 
   return (
     <ChakraCarousel gap={32}>
+      <CarouselItem categorie={'Rust game'} subtitle={'Rhythm game'}>
+        <Tabs isFitted variant="enclosed" py={5}>
+          <TabList mb="1em">
+            <Tab>Description</Tab>
+            <Tab>Demo</Tab>
+          </TabList>
+          <TabPanels>
+            <TabPanel>
+              <Flex flex={1} flexDirection={{ base: 'column', md: 'row' }}>
+                <Image
+                  userSelect="none"
+                  src="images/rust.png"
+                  alt="rustlogo"
+                  height="50vh"
+                  display={{ base: 'none', md: 'flex' }}
+                />
+                <VStack pl={{ base: 0, md: 10 }}>
+                  <Heading>{t('pages.projects.rhythm-game.title')}</Heading>
+                  <Text pt={3} fontSize={16}>
+                    {t('pages.projects.rhythm-game.description')}
+                  </Text>
+                  <CustomProjectTab project="rhythm-game" />
+                </VStack>
+              </Flex>
+            </TabPanel>
+            <TabPanel>
+              <NavItem
+                icon={AiFillPlayCircle}
+                route="https://rhythm-game.quentinpiot.com/"
+                active={false}
+                suppressHydrationWarning
+                openInNewTab
+                minWidth="100px"
+              >
+                Rust Rhythm Game : Web version
+              </NavItem>
+            </TabPanel>
+          </TabPanels>
+        </Tabs>
+      </CarouselItem>
       <CarouselItem categorie={'Android application'} subtitle={'Safe Trip'}>
         <Tabs isFitted variant="enclosed" py={5}>
           <TabList mb="1em">

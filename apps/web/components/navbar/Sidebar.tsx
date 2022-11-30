@@ -13,7 +13,7 @@ import { IconType } from 'react-icons'
 import NavItem from './NavItem'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'react-i18next'
-import { AiFillExperiment, AiFillLinkedin, AiFillProject } from 'react-icons/ai'
+import { AiFillExperiment, AiFillLinkedin, AiFillPlayCircle, AiFillProject } from 'react-icons/ai'
 import { FaSchool } from 'react-icons/fa'
 
 export interface ILinkItemProps {
@@ -60,7 +60,6 @@ const Sidebar: React.FC<ISidebarProps> = ({ onClose, ...rest }) => {
         </Heading>
         <CloseButton display={{ base: 'flex', md: 'none' }} onClick={onClose} />
       </Flex>
-
       {linkItems.map((link) => (
         <NavItem
           key={link.name}
@@ -83,6 +82,16 @@ const Sidebar: React.FC<ISidebarProps> = ({ onClose, ...rest }) => {
         openInNewTab
       >
         LinkedIn
+      </NavItem>
+      <NavItem
+        icon={AiFillPlayCircle}
+        route="https://rhythm-game.quentinpiot.com/"
+        active={false}
+        suppressHydrationWarning
+        onClose={onClose}
+        openInNewTab
+      >
+        Rust game (WIP)
       </NavItem>
     </Box>
   )

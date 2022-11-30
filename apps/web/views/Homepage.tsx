@@ -14,7 +14,6 @@ const Homepage: React.FC = () => {
     () => '/cvs/' + (i18n.language === 'fr' ? 'cv_français.pdf' : 'cv_english.pdf'),
     [i18n.language]
   )
-  console.log('urlCv', urlCv)
   return (
     <VStack>
       <PDFViewer url={urlCv} />

@@ -85,6 +85,19 @@
           "lessonsLearned": "Lessons learned"
         }
       },
+      "rhythm-game": {
+        "title": "\uD83D\uDEE0️ : A rust rhythm game",
+        "description": "Game made in Rust using the Bevy game engine to improve myself in the language and discover advanced concepts. In its final version, the project will include a backend for multiplayer, CI and unit tests.\nThe game also includes a web version exported in Web Assembly",
+        "tab": {
+          "categories": {
+            "duration": "Started in november 2022",
+            "numberOfPeople": "1",
+            "primaryRole": "Développement du jeu",
+            "skillsUsed": "Rust, Bevy, Docker, Github Actions, GCP",
+            "lessonsLearned": "TBD \n\n\n"
+          }
+        }
+      },
       "safeTrip": {
         "title": "Safe Trip : An android application to prevent harassing",
         "description": "                    SafeTrip is a mobile application (Android) written in Kotlin which aims to\n                    prevent aggressions using machine learning (Weka algorithms). The smartphone\n                    detects 4 cases: a fall, a run, a suspicious location or the entry in a vehicle\n                    using ML. In case of problem, the application takes control of the phone by\n                    launching a loud alarm and then after ten seconds, alerts the relatives by\n                    sending an SMS containing the position of the victim and notifies the users of\n                    the application within a radius of a few kilometers using Firebase API",

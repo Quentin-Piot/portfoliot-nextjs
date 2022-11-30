@@ -1,7 +1,7 @@
 import React, { LegacyRef, useEffect, useRef, useState } from 'react'
 
 import { Document, Page, pdfjs } from 'react-pdf'
-import { Box, Button, HStack, Text, VStack } from '@chakra-ui/react'
+import { Box, Button, CircularProgress, HStack, Text, VStack } from '@chakra-ui/react'
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'
 import throttle from 'lodash/throttle'
 
@@ -46,34 +46,47 @@ const PdfViewer = ({ url = '' }) => {
 
   return (
     <VStack width="100%">
-      <Box ref={pdfWrapper} width="100%" maxW={1000}>
-        <Document file={url} onLoadSuccess={onDocumentLoadSuccess}>
+      <Box ref={pdfWrapper as any} width="100%" maxW={1000}>
+        <Document
+          file={url}
+          onSourceSuccess={() => setNumPages(0)}
+          onLoadSuccess={onDocumentLoadSuccess}
+          loading={<></>}
+        >
           <Page pageNumber={pageNumber} width={initialWidth} renderMode="svg" />
         </Document>
       </Box>
-      <Text fontWeight={600}>
-        Page {pageNumber || (numPages ? 1 : '--')} of {numPages || '--'}
-      </Text>
-      <HStack>
-        <Button
-          type="button"
-          disabled={pageNumber <= 1}
-          onClick={previousPage}
-          mr={5}
-          leftIcon={<FiChevronLeft />}
-        >
-          Previous
-        </Button>
-        <Button
-          type="button"
-          disabled={pageNumber >= numPages}
-          onClick={nextPage}
-          ml={5}
-          rightIcon={<FiChevronRight />}
-        >
-          Next
-        </Button>
-      </HStack>
+      {numPages > 0 ? (
+        <>
+          <Text fontWeight={600}>
+            Page {pageNumber || (numPages ? 1 : '--')} of {numPages || '--'}
+          </Text>
+          <HStack>
+            <Button
+              type="button"
+              disabled={pageNumber <= 1}
+              onClick={previousPage}
+              mr={5}
+              leftIcon={<FiChevronLeft />}
+            >
+              Previous
+            </Button>
+            <Button
+              type="button"
+              disabled={pageNumber >= numPages}
+              onClick={nextPage}
+              ml={5}
+              rightIcon={<FiChevronRight />}
+            >
+              Next
+            </Button>
+          </HStack>
+        </>
+      ) : (
+        <Box position="absolute" top="30%">
+          <CircularProgress isIndeterminate color="gray.900" />
+        </Box>
+      )}
     </VStack>
   )
 }

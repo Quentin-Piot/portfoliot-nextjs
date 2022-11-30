@@ -1,14 +1,14 @@
-import { Box, Button, FlexProps, Icon, useColorMode } from '@chakra-ui/react'
+import { Box, Button, ButtonProps, Icon, useColorMode } from '@chakra-ui/react'
 import { IconType } from 'react-icons'
 import React, { ReactText } from 'react'
 import { useRouter } from 'next/router'
 
-interface INavItemProps extends FlexProps {
+interface INavItemProps extends ButtonProps {
   icon: IconType
   children: ReactText
   route: string
   active: boolean
-  onClose: () => void
+  onClose?: () => void
   openInNewTab?: boolean
 }
 
@@ -19,6 +19,7 @@ const NavItem = ({
   active,
   onClose,
   openInNewTab = false,
+  ...props
 }: INavItemProps) => {
   const { colorMode } = useColorMode()
   const colors = {
@@ -42,12 +43,12 @@ const NavItem = ({
         borderRadius="lg"
         role="group"
         cursor="pointer"
-        width="calc(100% - 25px)"
-        maxWidth="200px"
+        minWidth="calc(100% - 25px)"
+        w="max-content"
         textAlign="left"
         onClick={async () => {
           openInNewTab ? window.open(route) : await router.push(route)
-          onClose()
+          if (onClose) onClose()
         }}
         justifyContent="flex-start"
         bg={colors[colorMode]['background'][active ? 'active' : 'base']}
@@ -56,6 +57,7 @@ const NavItem = ({
           bg: colors[colorMode]['background'][active ? 'active' : 'hover'],
           color: colors[colorMode]['color'][active ? 'active' : 'hover'],
         }}
+        {...props}
       >
         {icon && <Icon mr="4" fontSize="16" as={icon} />}
         {children}
