@@ -4,6 +4,7 @@ import { Document, Page, pdfjs } from 'react-pdf'
 import { Box, Button, CircularProgress, HStack, Text, VStack } from '@chakra-ui/react'
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'
 import throttle from 'lodash/throttle'
+import styles from './PdfViewer.module.css';
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`
 
@@ -45,12 +46,12 @@ const PdfViewer = ({ url = '' }) => {
   }
 
   return (
-    <VStack width="100%">
-      <Box ref={pdfWrapper as any} width="100%" maxW={1000}>
+    <Box maxW="100%" overflow="auto" >
+      <Box ref={pdfWrapper as any} width="1000px">
         <Document
           file={url}
           onSourceSuccess={() => setNumPages(0)}
-          onLoadSuccess={onDocumentLoadSuccess}
+          onLoadSuccess={onDocumentLoadSuccess} className={styles.pdf_document}
           loading={<></>}
         >
           <Page pageNumber={pageNumber} width={initialWidth} renderMode="svg" />
@@ -58,10 +59,10 @@ const PdfViewer = ({ url = '' }) => {
       </Box>
       {numPages > 0 ? (
         <>
-          <Text fontWeight={600}>
+          <Text fontWeight={600} textAlign="center">
             Page {pageNumber || (numPages ? 1 : '--')} of {numPages || '--'}
           </Text>
-          <HStack>
+          <HStack marginX="auto" justifyContent="center">
             <Button
               type="button"
               disabled={pageNumber <= 1}
@@ -87,7 +88,7 @@ const PdfViewer = ({ url = '' }) => {
           <CircularProgress isIndeterminate color="gray.900" />
         </Box>
       )}
-    </VStack>
+    </Box>
   )
 }
 
