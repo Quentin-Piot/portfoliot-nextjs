@@ -9,7 +9,8 @@
       "items": {
         "home": "Home",
         "experience": "Experience",
-        "projects": "Side Projects",
+        "projects": "Projects",
+        "cv": "CV",
         "education": "Education",
         "about": "About"
       }

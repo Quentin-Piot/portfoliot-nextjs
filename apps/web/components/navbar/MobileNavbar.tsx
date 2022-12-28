@@ -44,6 +44,7 @@ const MobileNavbar = ({ onOpen, ...rest }: IMobileProps) => {
         fontFamily="monospace"
         fontWeight="bold"
         pl={6}
+
       >
         Quentin Piot
       </Heading>

@@ -1,7 +1,7 @@
 import React, { LegacyRef, useEffect, useRef, useState } from 'react'
 
 import { Document, Page, pdfjs } from 'react-pdf'
-import { Box, Button, CircularProgress, HStack, Text, VStack } from '@chakra-ui/react'
+import { Box, Button, CircularProgress, HStack, Text } from '@chakra-ui/react'
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'
 import throttle from 'lodash/throttle'
 import styles from './PdfViewer.module.css';
@@ -84,8 +84,8 @@ const PdfViewer = ({ url = '' }) => {
           </HStack>
         </>
       ) : (
-        <Box position="absolute" top="30%">
-          <CircularProgress isIndeterminate color="gray.900" />
+        <Box position="absolute" top="30%" left="45%">
+          <CircularProgress isIndeterminate color="gray.900" mx="auto" />
         </Box>
       )}
     </Box>

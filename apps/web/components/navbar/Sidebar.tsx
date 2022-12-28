@@ -32,30 +32,31 @@ const Sidebar: React.FC<ISidebarProps> = ({ onClose, ...rest }) => {
 
   const linkItems = useMemo<Array<ILinkItemProps>>(
     () => [
-      { name: t('components.navbar.items.home'), icon: FiHome, route: '/' },
+      { name: t('components.navbar.items.projects'), icon: FiHome, route: '/' },
       {
         name: t('components.navbar.items.experience'),
         icon: AiFillExperiment,
         route: '/experience',
       },
       { name: t('components.navbar.items.education'), icon: FaSchool, route: '/education' },
-      { name: t('components.navbar.items.projects'), icon: AiFillProject, route: '/projects' },
+      { name: t('components.navbar.items.cv'), icon: AiFillProject, route: '/cv' },
     ],
-    [t]
+    [t],
   )
   return (
     <Box
-      transition="3s ease"
+      transition='3s ease'
       bg={useColorModeValue('white', 'gray.900')}
-      borderRight="1px"
+      borderRight='1px'
       borderRightColor={useColorModeValue('gray.200', 'gray.700')}
       w={{ base: 'full', md: 60 }}
-      pos="fixed"
-      h="full"
+      pos='fixed'
+      h='full'
       {...rest}
     >
-      <Flex h="20" alignItems="center" mx="5" justifyContent="space-between">
-        <Heading fontSize="2xl" fontFamily="monospace" fontWeight="bold">
+      <Flex h='20' alignItems='center' mx='5' justifyContent='space-between'>
+        <Heading fontSize='2xl' fontFamily='monospace' fontWeight='bold' pl={4}
+        >
           Quentin Piot
         </Heading>
         <CloseButton display={{ base: 'flex', md: 'none' }} onClick={onClose} />
@@ -75,7 +76,7 @@ const Sidebar: React.FC<ISidebarProps> = ({ onClose, ...rest }) => {
       <Divider />
       <NavItem
         icon={AiFillLinkedin}
-        route="https://www.linkedin.com/in/quentin-piot/"
+        route='https://www.linkedin.com/in/quentin-piot/'
         active={false}
         suppressHydrationWarning
         onClose={onClose}
@@ -85,7 +86,7 @@ const Sidebar: React.FC<ISidebarProps> = ({ onClose, ...rest }) => {
       </NavItem>
       <NavItem
         icon={AiFillPlayCircle}
-        route="https://rhythm-game.quentinpiot.com/"
+        route='https://rhythm-game.quentinpiot.com/'
         active={false}
         suppressHydrationWarning
         onClose={onClose}

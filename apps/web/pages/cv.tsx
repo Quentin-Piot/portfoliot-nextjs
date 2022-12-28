@@ -1,18 +1,18 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import ProjectsView from 'views/Projects'
 import React from 'react'
+import Homepage from 'views/Homepage'
 
-const Home: NextPage = () => {
+const Cv: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Projects</title>
+        <title>CV</title>
       </Head>
 
-      <ProjectsView />
+      <Homepage />
     </>
   )
 }
 
-export default Home
+export default Cv
