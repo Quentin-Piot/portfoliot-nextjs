@@ -15,7 +15,7 @@ import { useRouter } from 'next/router'
 import { useTranslation } from 'react-i18next'
 import { AiFillExperiment, AiFillLinkedin, AiFillPlayCircle, AiFillProject } from 'react-icons/ai'
 import { FaSchool } from 'react-icons/fa'
-import { GiWorld } from 'react-icons/all'
+import { GiWorld } from 'react-icons/gi'
 
 export interface ILinkItemProps {
   name: string
