@@ -15,6 +15,7 @@ import { useRouter } from 'next/router'
 import { useTranslation } from 'react-i18next'
 import { AiFillExperiment, AiFillLinkedin, AiFillPlayCircle, AiFillProject } from 'react-icons/ai'
 import { FaSchool } from 'react-icons/fa'
+import { GiWorld } from 'react-icons/all'
 
 export interface ILinkItemProps {
   name: string
@@ -93,6 +94,17 @@ const Sidebar: React.FC<ISidebarProps> = ({ onClose, ...rest }) => {
         openInNewTab
       >
         Rust game (WIP)
+      </NavItem>
+
+      <NavItem
+        icon={GiWorld}
+        route='https://world.quentinpiot.com/'
+        active={false}
+        suppressHydrationWarning
+        onClose={onClose}
+        openInNewTab
+      >
+        QQ & Juju - SWT
       </NavItem>
     </Box>
   )
