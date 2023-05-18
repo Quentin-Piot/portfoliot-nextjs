@@ -1,4 +1,4 @@
-module.exports = {
+const nextConfig = {
   entry: "./src/js/main.js",
   output: {
       path:__dirname+ '/dist/',
@@ -25,6 +25,10 @@ module.exports = {
               }
           }
       ]
-  }
+  },
 
 };
+
+
+
+module.exports = nextConfig
