@@ -7465,9 +7465,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"web-5e973e@workspace:apps/web":
+"web@workspace:apps/web":
   version: 0.0.0-use.local
-  resolution: "web-5e973e@workspace:apps/web"
+  resolution: "web@workspace:apps/web"
   dependencies:
     "@apollo/client": ^3.5.10
     "@babel/plugin-syntax-top-level-await": ^7.14.5
