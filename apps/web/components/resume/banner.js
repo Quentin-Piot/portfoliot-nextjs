@@ -47,7 +47,7 @@ const Banner = () => (
                                     </div>
                                     <div className="link-horizontal">
                                         <ul>
-                                            <li><a className="btn btn-default primary-btn back-white">download cv</a></li>
+                                            <li><a className="btn btn-default primary-btn back-white" href={"/cvs/cv_english.pdf"} target={"_blank"}>Download CV</a></li>
                                         </ul>
                                     </div>
                                 </div>

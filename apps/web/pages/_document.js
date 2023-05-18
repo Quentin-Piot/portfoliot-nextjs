@@ -25,7 +25,7 @@ export default class MyDocument extends Document {
                     />
                     <meta
                         name="description"
-                        content="Portfolio of Quentin Piot. French software Engineer based in Asia. Well-versed in a wide range of frontend technologies (React, Vue, Next.js, Redux) and backend technologies (Node.js/Nest.js/Hapi.js, Java/Spring, GraphQl, PostgresSQL)"
+                        content="Portfolio of Quentin Piot. Software Engineer based in France. Well-versed in a wide range of frontend technologies (React, Vue, Next.js, Redux) and backend technologies (Node.js/Nest.js/Hapi.js, Rust, Java/Spring, GraphQl, PostgresSQL)"
                     />
                     <meta name="mobile-web-app-capable" content="yes"/>
                     <meta name="apple-mobile-web-app-capable" content="yes"/>
