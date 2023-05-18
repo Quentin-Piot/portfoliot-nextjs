@@ -1,49 +1,42 @@
 {
-  "name": "web",
-  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start"
   },
   "dependencies": {
-    "@chakra-ui/react": "^1.8.8",
-    "@emotion/react": "^11.9.0",
-    "@emotion/styled": "^11.8.1",
-    "framer-motion": "^6.3.3",
-    "i18next": "^21.8.0",
-    "i18next-browser-languagedetector": "^6.1.4",
-    "ios-inner-height": "^1.1.1",
-    "lodash.throttle": "^4.1.1",
-    "next": "12.1.6",
-    "next-pwa": "^5.5.2",
-    "popmotion": "^8.7.3",
+    "@apollo/client": "^3.5.10",
+    "@babel/plugin-syntax-top-level-await": "^7.14.5",
+    "aos": "^2.3.4",
+    "apollo-server-micro": "^3.6.3",
+    "bootstrap": "^5.1.3",
+    "bootstrap-scss": "^5.1.3",
+    "deepmerge": "^4.2.2",
+    "graphql": "^16.6.0",
+    "micro-cors": "^0.1.1",
+    "next": "12.1.0",
+    "nprogress": "^0.2.0",
     "react": "17.0.2",
+    "react-countdown-now": "^2.1.2",
+    "react-countup": "^6.4.2",
     "react-dom": "17.0.2",
-    "react-i18next": "^11.16.9",
-    "react-icons": "^4.3.1",
-    "react-pdf": "^5.7.2",
-    "react-transition-group": "^4.4.2",
-    "react-vertical-timeline-component": "^3.5.2",
-    "three": "^0.125.0"
+    "react-fullpage": "^0.1.19",
+    "react-image-lightbox": "^5.1.4",
+    "react-light-accordion": "^0.1.4",
+    "react-masonry-css": "^1.0.16",
+    "react-parallax-tilt": "^1.6.5",
+    "react-slick": "^0.28.1",
+    "react-toastify": "^8.2.0",
+    "reactstrap": "^9.0.1",
+    "typewriter-effect": "^2.18.2"
   },
   "devDependencies": {
-    "@types/lodash.throttle": "^4",
-    "@types/node": "17.0.31",
-    "@types/react": "18.0.9",
-    "@types/react-dom": "18.0.3",
-    "@types/react-pdf": "^5",
-    "@types/react-transition-group": "^4",
-    "@types/react-vertical-timeline-component": "^3",
-    "@types/three": "^0.140.0",
-    "@typescript-eslint/eslint-plugin": "^5.22.0",
-    "eslint": "8.15.0",
-    "eslint-config-next": "12.1.6",
-    "eslint-config-prettier": "^8.5.0",
-    "next-sitemap": "^2.5.20",
-    "prettier": "^2.6.2",
-    "typescript": "4.6.4"
+    "nodemon": "^2.0.15",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.49.9"
+  },
+  "resolutions": {
+    "react-countup/countup.js": "2.5.0"
   }
 }
