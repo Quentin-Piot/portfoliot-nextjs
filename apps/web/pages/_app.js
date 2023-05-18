@@ -28,15 +28,9 @@ Router.onRouteChangeError = () => {
 };
 
 function MyFunctionComponent({ children }) {
-  const [loader, setLoader] = useState(true)
   const [goingUp, setGoingUp] = useState(false)
 
   useEffect(() => {
-    // Page Loader
-    setTimeout(() => {
-      setLoader(false)
-    }, 1500)
-
     // Tap to Top Scroll
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -64,20 +58,6 @@ function MyFunctionComponent({ children }) {
           <title>Unice</title>
           <meta name='viewport' content='width=device-width, initial-scale=1'/>
         </Head>
-        {loader &&
-          <div className="loader-wrapper">
-            <div className="loader">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-          </div>}
         <>{children}</>
         <div className="tap-top" style={goingUp ? { display: 'block' } : { display: 'none' }} onClick={tapToTop}>
           <div><i className="fa fa-angle-double-up"></i></div>
