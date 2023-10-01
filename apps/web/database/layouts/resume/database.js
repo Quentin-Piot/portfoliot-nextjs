@@ -32,6 +32,12 @@ module.exports = {
 
     ScheduleData: [
         {
+          name: 'Freelance',
+          desc: 'Different missions of fullstack development : platform for French government of Defense, web3 platform for a startup, ...',
+          time: '01/2021',
+          endTime: 'now'
+        },
+        {
             name: 'Partoo',
             img: '/assets/images/resume/icon/partoo.png',
             desc: ' Fullstack development on the Click and Collect / QrCode applications in the Partoo Food team',
@@ -49,15 +55,15 @@ module.exports = {
             name: 'Dassault Systèmes',
             img: '/assets/images/resume/icon/dassault-systemes.png',
             desc: 'Development of widget prototypes (new features, evolutions, fixes)',
-            time: '8:00',
-            endTime: '10:00'
+            time: '01/2021',
+            endTime: '07/2021'
         },
         {
             name: 'Air France',
             img: '/assets/images/resume/icon/air-france.png',
             desc: 'Improvement of existing Angular/Electron based applications to meet pilots needs',
-            time: '8:00',
-            endTime: '10:00'
+            time: '01/2020',
+            endTime: '07/2020'
         },
     ],
 

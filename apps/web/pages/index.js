@@ -31,7 +31,7 @@ const Resume = () => {
 
             <BannerSection />
 
-            {/*<Section />*/}
+            <Section />
 
             <ScheduleSection />
 
