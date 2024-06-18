@@ -16,11 +16,15 @@ const Footer = () => (
                         </div>
                     </div>
                 </Col>
-                <Col xs="12">
-                    <div className="m-l-auto center-para">
-                        <h6 className="copyright-text text-center">© 2023 Quentin Piot</h6>
-                    </div>
-                </Col>
+              <Col xs="12">
+                <a href='https://qqetjuju.com' className='scroll-top'
+                   style={{ fontSize: '0px !important', height: '0px' }}>
+                  Blog de Quentin Piot et Juliette Cattin - QQ et JUJU
+                </a>
+                <div className="m-l-auto center-para">
+                  <h6 className="copyright-text text-center">© 2023 Quentin Piot</h6>
+                </div>
+              </Col>
             </Row>
         </Container>
     </footer>
