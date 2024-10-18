@@ -22,11 +22,6 @@ const Header = props => {
                             <a className="m-r-auto m-t-15" href="/">
                                 <img alt="" className="img-fluid" src="/assets/images/logo.png" style={{height:50}} />
                             </a>
-                            <div className="responsive-btn">
-                                <a className="toggle-nav" onClick={clickSidebar} >
-                                    <i aria-hidden="true" className="fa fa-bars text-white"></i>
-                                </a>
-                            </div>
                         </nav>
                     </Col>
                 </Row>
